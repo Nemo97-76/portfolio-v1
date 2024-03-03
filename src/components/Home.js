@@ -86,7 +86,6 @@ const Home = () => {
         </h2>
         <BackToTop />
       </div>
-      {/* /home */}
 
       <div
 
@@ -227,7 +226,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* column 1 */}
 
           <div
             className="columnTwo"
@@ -261,7 +259,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* column 1 */}
         </div>
         <div className="row bars mx-auto mt-5">
           <div className="progressBarleft">
@@ -274,7 +271,7 @@ const Home = () => {
                 <LinearProgress className="linear" determinate value={95} />
               </Stack>
 
-            </div>{/* bar+data */}
+            </div>
 
 
             <div>
@@ -286,7 +283,7 @@ const Home = () => {
                 <LinearProgress className="linear" determinate value={95} />
               </Stack>
 
-            </div>{/* bar+data */}
+            </div>
 
             <div>
               <div className="bardetails">
@@ -297,10 +294,9 @@ const Home = () => {
                 <LinearProgress className="linear" determinate value={90} />
               </Stack>
 
-            </div>{/* bar+data */}
+            </div>
 
-          </div>{/* progressBarleft */}
-          {/* //////////////////////////////////////////////// */}
+          </div>
           <div className="progressBarRight">
             <div>
               <div className="bardetails">
@@ -311,7 +307,7 @@ const Home = () => {
                 <LinearProgress className="linear" determinate value={80} />
               </Stack>
 
-            </div>{/* bar+data */}
+            </div>
 
             <div >
               <div className="bardetails">
@@ -322,7 +318,7 @@ const Home = () => {
                 <LinearProgress className="linear" determinate value={85} />
               </Stack>
 
-            </div>{/* bar+data */}
+            </div>
 
             <div >
               <div className="bardetails">
@@ -333,15 +329,15 @@ const Home = () => {
                 <LinearProgress className="linear" determinate value={80} />
               </Stack>
 
-            </div>{/* bar+data */}
+            </div>
 
-          </div>{/* progressBarRight */}
+          </div>
 
         </div>
         <div className="btnHolder mt-5 pb-5">
           <DownloadButton fileurl="http://localhost:3000/src/Resume.pdf" filename="tasneem Youssef Resume.pdf" />
-        </div>{/* btnHolder */}
-      </div>{/* /resume */}
+        </div>
+      </div>
 
       <div className="portfolio"  >
         <p
@@ -354,7 +350,7 @@ const Home = () => {
           some of my recent projects
         </h3>
         <Navigator />
-      </div>{/* /portfolio */}
+      </div>
 
 
       <div className="Hire mb-5">
@@ -366,8 +362,8 @@ const Home = () => {
               Hire me
             </Button>
           </h2>
-        </div>{/* div inside Hire */}
-      </div>{/* /Hire */}
+        </div>
+      </div>
 
       <Speak />
 
@@ -407,24 +403,23 @@ const Home = () => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <div className="question-mark"></div>{/* /question mark */}
-      </div>{/* /Questions */}
+        <div className="question-mark"></div>
+      </div>
       <div className="getInTouch" id="contactMe">
         <div className="leftInfo">
           <div className="column1 pt-5">
             <h2>let's get in touch</h2>
             <p className="mt-4">I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.</p>
-          </div>{/* /column1 */}
-
+          </div>
           <div className="column1 ">
             <h3>livig in:</h3>
             <p>45 Alexandria, Egypt </p>
-          </div>{/* /column2*/}
+          </div>
 
           <div className="column1 ">
             <h3>call:</h3>
             <p>+20 100 00 797 61</p>
-          </div>{/* /column3*/}
+          </div>
 
           <div className="icons">
 
@@ -436,20 +431,19 @@ const Home = () => {
               </Tooltip>
             </Sheet>
 
-
             <Sheet className="sheet">
               <Tooltip title="instagram" arrow placement="bottom">
-                <a>
+                <div>
                   <BsInstagram id="ICON" />
-                </a>
+                </div>
               </Tooltip>
             </Sheet>
 
             <Sheet className="sheet">
               <Tooltip title="LinkedIn" arrow placement="bottom">
-                <a>
+                <div>
                   <SiLinkedin id="ICON" />
-                </a>
+                </div>
               </Tooltip>
             </Sheet>
 
@@ -460,11 +454,8 @@ const Home = () => {
                 </a>
               </Tooltip>
             </Sheet>
-
-
-
-          </div>{/* /column4*/}
-        </div>{/* /leftInfo */}
+          </div>
+        </div>
 
         <div className="rightform ">
           <form id="Form">
@@ -506,11 +497,11 @@ const Home = () => {
               </Button>
             </Snackbar>
           </form>
-        </div>{/* /rightform */}
-      </div>{/* /getInTouch */}
-      <div className="footer" >
-        <p>copy © 2024 <span className="text">Tasneem Youssef</span>. All rights reserved.</p>
-      </div>{/* /footer */}
+        </div>
+      </div>
+      <div className="footer text-center " >
+        <p>copy © {new Date().getFullYear()} <span className="text">Tasneem Youssef</span>. All rights reserved.</p>
+      </div>
 
     </>
   );

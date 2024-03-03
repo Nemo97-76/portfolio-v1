@@ -1,5 +1,5 @@
 <h1>Portfolio-v1</h1>
-<span>a moodern and responsive portfolio website showcasing my skills as a MERN developer.<br>this website is a SPA which ffearures a clean,design interactive and clear navigation</span>
+<span>a moodern and responsive portfolio website showcasing my skills as a MERN developer.<br>this website is a SPA which fearures a clean , design interactive and clear navigation</span>
 <h3>Technologies Used:</h3>
 <ul>
   <li>HTML</li>

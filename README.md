@@ -7,7 +7,7 @@
   <li>Javascript</li>
   <li>Reactjs</li>
 </ul>
-<span>feel free to contact with me </span>
-<span>Email: tasneemyoussef61@gmail.com</span>
-<span>LinkedIn: <a href="https://www.linkedin.com/in/tasneem-youssef-770708278/">LinkedIn</a></span>
+<span>feel free to contact with me </span> <br>
+<span>Email: tasneemyoussef61@gmail.com</span> <br>
+<span>LinkedIn: <a href="https://www.linkedin.com/in/tasneem-youssef-770708278/">LinkedIn</a></span> <br>
 <span><a herf="https://portfolio-76.netlify.app">Demo</a></span>

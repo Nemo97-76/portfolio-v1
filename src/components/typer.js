@@ -5,7 +5,7 @@ function Typer() {
   const el = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['UI Developer', 'Back-end Developer', 'Full-stack developer'],
+      strings: ['front-end Developer', 'Back-end Developer', 'MERN-stack developer'],
       typeSpeed: 70,
       backSpeed: 70,
       startDelay: 70,

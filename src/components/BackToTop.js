@@ -45,7 +45,6 @@ export default function BackToTop(props) {
   return (
     <React.Fragment>
       <CssBaseline />
-
       <Toolbar id="back-to-top-anchor" />
       <ScrollTop {...props} >
         <NorthIcon className='ArrowUp' />

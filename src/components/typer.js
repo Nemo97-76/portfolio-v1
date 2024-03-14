@@ -5,7 +5,7 @@ function Typer() {
   const el = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['MERN-stack developer','front-end Developer', 'Back-end Developer'],
+      strings: ['MERN-stack developer', 'front-end Developer', 'Back-end Developer'],
       typeSpeed: 70,
       backSpeed: 70,
       startDelay: 70,
@@ -19,7 +19,7 @@ function Typer() {
   }, []);
   return (
     <div className="typer">
-      <span ref={el} />
+      <span ref={el} style={{ fontSize: "7vw" }} />
     </div>
   );
 }

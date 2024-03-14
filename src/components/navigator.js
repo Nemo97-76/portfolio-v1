@@ -21,7 +21,6 @@ const ComponentC = () => {
   );
 };
 const Tabs = () => {
-  //TODO:change button style :color,fontWeight,borderBottom inside handelchange()
 
   const [activeTab, setActiveTab] = useState(0)
   const handleTabChange = (index) => {

@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 3000px;
+  height: fit-content;
   scroll-behavior: auto !important;
 }
 
@@ -31,14 +31,14 @@ a {
 }
 
 .ResumeButton {
-  font-size: 20px !important;
+  font-size: 1rem !important;
   background-color: #b6acad !important;
   color: black !important;
 }
 
 #header {
   width: 100%;
-  height: 70px;
+  height: 10vh;
   transition: 0.2s;
 }
 
@@ -61,26 +61,8 @@ a {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.typerwriter {
-  font-family: monospace;
-  font-size: 18px;
-  animation: blink-caret 0.7s infinite;
-}
-
-@keyframes blink-caret {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
 .Arrow {
-  margin-Top: 10vh;
+
   font-size: 55px !important;
   color: white;
   animation-name: arrowMovment;
@@ -96,7 +78,7 @@ a {
 
 @keyframes arrowMovment {
   50% {
-    margin-top: 15vh;
+    margin-top: 5vh;
   }
 }
 
@@ -135,6 +117,11 @@ h3 {
   justify-content: space-between !important;
 }
 
+.bardetails h5 {
+  font-size: 1rem !important;
+
+}
+
 .linear {
   height: 8px !important;
   color: #e57734 !important;
@@ -149,7 +136,7 @@ h3 {
 }
 
 .BioHeading {
-  font-size: 35px;
+  font-size: 1rem;
 }
 
 .BioHeading b {
@@ -157,7 +144,7 @@ h3 {
 }
 
 .Bio {
-  font-size: 20px;
+  font-size: 0.7rem;
 }
 
 .ResumeColumns {
@@ -183,6 +170,7 @@ h3 {
 }
 
 .eductiondetails {
+  font-size: 1rem;
   color: grey;
 }
 
@@ -225,7 +213,7 @@ h3 {
 .Questions {
   display: flex;
   width: 80%;
-  height: 55vh;
+  height: fit-content;
   margin: auto;
   justify-content: space-between;
 }
@@ -240,7 +228,7 @@ h3 {
 
 .AccordionHolder {
   width: 45%;
-  height: inherit;
+  height: fit-content;
   margin-top: 10vh;
 }
 
@@ -263,7 +251,7 @@ h3 {
 
 
 .Data div {
-  font-size: 20px;
+  font-size: 0.9rem;
   display: flex;
   flex-direction: column;
 }
@@ -300,14 +288,18 @@ h3 {
   cursor: default;
 }
 
+.carousel {
+  height: 80vh;
+}
+
 .CarosuelItem {
   padding-top: 15vh !important;
-  height: 60vh !important;
+  height: inherit !important;
   padding-bottom: 10vh;
 }
 
 #clientSpeak {
-  height: 80vh;
+  height: 100vh;
   background-color: #b6acad;
   padding-top: 3vh;
 }
@@ -357,28 +349,14 @@ h3 {
 }
 
 .ArrowUp {
-  font-size: 35px !important;
-  margin-top: 5px !important;
+  font-size: 2rem !important;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .FadBox:hover .ArrowUp {
   color: black !important;
-}
-
-
-
-@keyframes pulsate-fwd {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  50% {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
 }
 
 h2,
@@ -546,11 +524,9 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.Hire div h2 {
-  font-size: 350%;
-}
 
 .HireMe {
+  font-size: 2rem !important;
   transition: All 0.3s;
 }
 
@@ -575,7 +551,7 @@ h1 {
 .NaV {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 50%;
   margin: auto;
   margin-top: 5vh;
 }
@@ -609,7 +585,9 @@ h1 {
 
 .question-mark {
   width: 45%;
-  height: "inherit";
+  height: 79vh;
+  position: relative;
+  margin-top: 10vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -617,10 +595,11 @@ h1 {
 }
 
 .getInTouch {
-  height: 65vh;
+  height: fit-content;
   background-color: #e57734;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 7vh;
 }
 
 .leftInfo,
@@ -634,7 +613,7 @@ h1 {
   height: fit-content;
   margin: auto;
   text-align: center;
-  font-size: 25px;
+  font-size: 1rem;
 }
 
 .sheet {
@@ -654,7 +633,7 @@ h1 {
 }
 
 label {
-  font-size: 25px;
+  font-size: 1rem;
 }
 
 .nameInput,
@@ -664,7 +643,7 @@ textarea {
   outline: none;
   border-bottom: 2px solid rgb(64, 64, 64);
   width: 100%;
-  font-size: 20px !important;
+  font-size: 1rem !important;
   line-height: 35px;
 }
 
@@ -684,7 +663,7 @@ textarea:focus {
 }
 
 .footer p {
-  font-size: 20px;
+  font-size: 0.5rem;
   color: white;
   position: absolute;
   left: 50%;
@@ -702,7 +681,9 @@ textarea:focus {
 }
 
 .menu {
-  font-size: 45px !important;
+  position: relative;
+  top: -10px;
+  font-size: 1.5rem !important;
 }
 
 .iconsRow {
@@ -711,13 +692,13 @@ textarea:focus {
 }
 
 .menuIcon {
-  font-size: 30px !important;
+  font-size: 1.5rem !important;
   color: black !important;
 }
 
 #Name {
   color: white !important;
-  font-size: 45px !important;
+  font-size: 1.7rem !important;
   font-family: sans-serif !important;
   font-weight: 700 !important;
   position: absolute !important;
@@ -730,14 +711,13 @@ textarea:focus {
 
 .typer span {
   color: white;
-  font-size: 80px;
 }
 
 #MenuName {
   display: flex;
   width: max-content;
   color: #e57734;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-family: sans-serif;
   font-weight: 700;
   position: absolute;

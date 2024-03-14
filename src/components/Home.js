@@ -197,7 +197,7 @@ const Home = () => {
             <div className="detailsBox"
             >
               <div>
-                <h4>bachelor in physics</h4>
+                <h5>bachelor in physics</h5>
                 <span>Alexandria unversity/2018-2022</span> <br></br>
                 <span className="eductiondetails">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -205,12 +205,12 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <h3 className="myskills mt-2">My skills</h3>
+            <h5 className="myskills mt-2">My skills</h5>
             <div
               className="detailsBox"
             >
               <div>
-                <h4>HTML/CSS</h4>
+                <h5>HTML/CSS</h5>
                 <span className="eductiondetails">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the dummy text.
@@ -218,7 +218,7 @@ const Home = () => {
               </div>
               <hr />
               <div>
-                <h4>bootstrap</h4>
+                <h5>bootstrap</h5>
                 <span className="eductiondetails">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the dummy text.
@@ -234,7 +234,7 @@ const Home = () => {
               className="detailsBox"
             >
               <div>
-                <h4>javaScript</h4>
+                <h5>javaScript</h5>
                 <span className="eductiondetails">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the dummy text.
@@ -242,7 +242,7 @@ const Home = () => {
               </div>
               <hr />
               <div>
-                <h4>reactjs.</h4>
+                <h5>reactjs.</h5>
                 <span className="eductiondetails">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the dummy text.
@@ -250,7 +250,7 @@ const Home = () => {
               </div>
               <hr />
               <div>
-                <h4>Nodejs.</h4>
+                <h5>Nodejs.</h5>
                 <span>Alexandria unversity/2018-2022</span> <br></br>
                 <span className="eductiondetails">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -335,7 +335,7 @@ const Home = () => {
 
         </div>
         <div className="btnHolder mt-5 pb-5">
-          <DownloadButton fileurl="http://localhost:3000/src/Resume.pdf" filename="tasneem Youssef Resume.pdf" />
+          <DownloadButton fileurl="http://localhost:3000/src/tasneem-youssef-Resume.pdf" filename="tasneem Youssef Resume.pdf" />
         </div>
       </div>
 
@@ -374,19 +374,19 @@ const Home = () => {
           >
             FAQ
           </p>
-          <h2 className="mb-4">
+          <h4 className="mb-4">
             Have any questions?
-          </h2>
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>How can i help you ?</Accordion.Header>
+          </h4>
+          <Accordion.Item style={{ fontSize: "0.7rem" }} eventKey="0">
+            <Accordion.Header style={{ fontSize: "1rem" }}>How can i help you ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
               minim veniam
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>how you can contact me ?</Accordion.Header>
+          <Accordion.Item style={{ fontSize: "0.7rem" }} eventKey="1">
+            <Accordion.Header style={{ fontSize: "1rem" }}>how you can contact me ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -394,8 +394,8 @@ const Home = () => {
             </Accordion.Body>
           </Accordion.Item>
 
-          <Accordion.Item eventKey="3">
-            <Accordion.Header>how can i choose the template ?</Accordion.Header>
+          <Accordion.Item style={{ fontSize: "0.7rem" }} eventKey="3">
+            <Accordion.Header style={{ fontSize: "1rem" }}>how can i choose the template ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -481,7 +481,7 @@ const Home = () => {
               onClose={handleClose}
               autoHideDuration={4000}
               animationDuration={animationDuration}
-              size="lg"
+              size="sm"
               sx={{
                 ...(open && {
                   animation: `${inAnimation} ${animationDuration}ms forwards`,
@@ -493,7 +493,7 @@ const Home = () => {
             >
               {<BsExclamationLg size={30} color="#e57734" />}project details has been sent ,i'll text you back soon <br></br>
               <Button className="modalBTN" onClick={handleClose}>
-                <IoMdClose size={25} color="#e57734" />
+                <IoMdClose size={25} color="#000000" />
               </Button>
             </Snackbar>
           </form>

@@ -3,6 +3,7 @@ import Typer from "./typer.js";
 import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
 import BackToTop from "./BackToTop.js";
 import "animate.css";
+import resume from "../tasneem-youssef-Resume.pdf"
 import Stack from '@mui/joy/Stack';
 import { LinearProgress } from '@mui/joy';
 import { Accordion } from 'react-bootstrap'
@@ -335,7 +336,7 @@ const Home = () => {
 
         </div>
         <div className="btnHolder mt-5 pb-5">
-          <DownloadButton fileurl="http://localhost:3000/src/tasneem-youssef-Resume.pdf" filename="tasneem Youssef Resume.pdf" />
+          <DownloadButton fileurl={resume} filename="tasneem-Youssef-Resume.pdf" />
         </div>
       </div>
 

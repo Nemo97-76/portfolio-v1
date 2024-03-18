@@ -12,7 +12,7 @@ import { BsInstagram } from 'react-icons/bs'
 import { SiLinkedin } from 'react-icons/si'
 import { BsGithub } from 'react-icons/bs';
 import Nav from 'react-bootstrap/Nav';
-import { Link } from 'react-router-dom';
+import { Sheet, Tooltip } from '@mui/joy';
 export default function MenuButton() {
   const [open, setOpen] = React.useState(false);
   return (
@@ -64,32 +64,40 @@ export default function MenuButton() {
           <Nav.Link href="#contactMe">
             <ListItemButton onClick={() => setOpen(false)}>Contact Me</ListItemButton>
           </Nav.Link>
-          <div className='mt-3 iconsRow'>
-            <Link>
-              <BsFacebook className='menuIcon' />
-            </Link>
+          <div className="icons">
 
+            <Sheet className="sheet" >
+              <Tooltip title="facebook" arrow placement="bottom">
+                <a href="https://www.facebook.com/tasn13eem/">
+                  <BsFacebook id="ICON" />
+                </a>
+              </Tooltip>
+            </Sheet>
 
-            <Link>
-              <BsInstagram className='menuIcon' />
-            </Link>
+            <Sheet className="sheet">
+              <Tooltip title="instagram" arrow placement="bottom">
+                <div>
+                  <BsInstagram id="ICON" />
+                </div>
+              </Tooltip>
+            </Sheet>
 
+            <Sheet className="sheet">
+              <Tooltip title="LinkedIn" arrow placement="bottom">
+                <div>
+                  <SiLinkedin id="ICON" />
+                </div>
+              </Tooltip>
+            </Sheet>
 
-            <Link>
-              <SiLinkedin className='menuIcon' />
-            </Link>
-
-
-            <Link>
-              <BsGithub className='menuIcon' />
-            </Link>
-
-
-
-
-
+            <Sheet className="sheet">
+              <Tooltip title="gitHub" arrow placement="bottom">
+                <a href="https://github.com/Nemo97-76">
+                  <BsGithub id="ICON" />
+                </a>
+              </Tooltip>
+            </Sheet>
           </div>
-
         </List>
         <div id='MenuName'>
           Tasneem Youssef

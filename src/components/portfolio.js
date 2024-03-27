@@ -10,7 +10,7 @@ const Portfolio = () => {
         <div className="portfolio">
           <div className="RowOne row" >
             <div className='AA img '>
-              <img src={portfolio1} style={{ width: "100%" }} loading="lazy" />
+              <img src={portfolio1} alt="port1" style={{ width: "100%" }} loading="lazy" />
               <div>
                 <InsertLink className='icon' /><br />
                 <span alt="port1" style={{ fontSize: "1rem" }}>portfolio</span>

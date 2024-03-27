@@ -396,7 +396,7 @@ h1 {
 .img {
   position: relative;
   width: 30% !important;
-  height: 300px;
+  height: fit-content;
   border-radius: 20px;
   background-position: center;
   background-repeat: no-repeat;
@@ -467,19 +467,23 @@ h1 {
   visibility: hidden;
 }
 
+.img img {
+  object-fit: cover;
+}
+
 .img:hover.img::before {
   visibility: visible;
 }
 
-.AA {
+/* .AA {
   background-image: url('./5fc646f94eedff1f029453ab_NNY_GY3BKuey7lUAOjIcIFTRLi5vZn_2Zje8KEIT0OLZXyWEtLsUTsomSGXe5Fl5gWWVA9f9gSME-GpkAx4d8LMGOrEe9dIIxl16ofGsF2ZnGFrNGkD6vyNZZp6yeVHquh2tW-H5.png');
-}
+} */
 
-.AB {
+/* .AB {
   background-image: url('./ecommerce\ 1.avif');
 }
-
-.AC {
+ */
+/* .AC {
   background-image: url('./portfolio\ 1.jpg');
 }
 
@@ -494,7 +498,7 @@ h1 {
 .BC {
   background-image: url('./ecommrce\ 3.jpg');
 }
-
+ */
 .Hire {
   margin-top: 15vh;
   position: relative;

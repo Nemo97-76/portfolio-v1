@@ -47,7 +47,8 @@ const outAnimation = keyframes`
 
 const Home = () => {
   const [open, setOpen] = React.useState(false);
-
+ var currentYear=new Date().getFullYear();
+var number=currentYear-1997
   const animationDuration = 600;
 
   const handleClick = () => {
@@ -106,7 +107,7 @@ const Home = () => {
           className="detailsRow"
         >
           <div className="content" style={{ width: "45%" }}>
-            <span id="title" className="BioHeading"/*  style={{ fontSize: "40px" }} */>
+            <span id="title" className="BioHeading">
               Hi,I'm{" "}
               <b className="self">
                 Tasneem Youssef
@@ -128,7 +129,7 @@ const Home = () => {
               className="circle"
             >
               <div className="number">
-                26
+                {number}
               </div>
             </div>
             {/* /circle */}

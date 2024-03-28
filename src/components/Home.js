@@ -20,7 +20,8 @@ import { Snackbar } from '@mui/joy'
 import { IoMdClose } from "react-icons/io";
 import DownloadButton from "./downloadButton.js";
 import Navigator from './navigator.js'
-import Speak from './Speak.js'
+import Speak from './Speak.js';
+import questionMark from "./images/questionMark.png"
 const inAnimation = keyframes`
   0% {
     transform: scale(0);
@@ -400,7 +401,9 @@ const Home = () => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <div className="question-mark"></div>
+        <div className="question-mark">
+          <img src={questionMark} alt="questionMark" className="qusetionImg" />
+        </div>
       </div>
       <div className="getInTouch" id="contactMe">
         <div className="leftInfo">

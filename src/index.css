@@ -62,7 +62,7 @@ a {
 
 .Arrow {
 
-  font-size: 55px !important;
+  font-size: 2rem !important;
   color: white;
   animation-name: arrowMovment;
   animation-timing-function: ease-in-out;
@@ -102,7 +102,6 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  background-color: #bbdefb;
   height: 100%;
   padding: 15px;
   gap: 5px;
@@ -214,7 +213,7 @@ h3 {
 }
 
 .number {
-  border: #3e2922 2px solid;
+  cursor: default;
   text-align: center;
   font-size: 10rem;
   position: absolute;
@@ -250,7 +249,7 @@ h3 {
 }
 
 .HiringBTN {
-  font-size: 35px !important;
+  font-size: 1.5rem !important;
   border: 2px solid #f6c0a6 !important;
   color: black !important;
   display: block !important;
@@ -296,7 +295,7 @@ h3 {
 
 .speakContainer {
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: black;
   display: flex;
   flex-direction: column;
@@ -323,11 +322,11 @@ h3 {
 
 .CarosuelItem p {
   text-align: center;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .clientDetails {
-  font-size: 15px !important;
+  font-size: 0.6rem !important;
   color: whitesmoke !important;
 }
 
@@ -605,14 +604,17 @@ h1 {
 }
 
 .question-mark {
-  width: 45%;
-  height: 79vh;
-  position: relative;
+  min-width: 20%;
   margin-top: 10vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("./Download_free_psd___image_of_Question_mark_punctuation_in_retro_font__by_Chim__about_question__question_mark__qustions_background__vintage_question_mark__and_typography_2586110-removebg-pre.png");
+}
+
+.qusetionImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .getInTouch {

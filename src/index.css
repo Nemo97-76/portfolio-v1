@@ -98,8 +98,27 @@ h3 {
 .detailsRow {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-content: center;
+  background-color: #bbdefb;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
 }
+
+.content {
+  flex-grow: 1;
+  flex-basis: 1;
+  align-self: auto;
+}
+
+.anime {
+  flex-grow: 1;
+  flex-basis: 1;
+}
+
 
 .bars {
   width: 80% !important;
@@ -189,15 +208,15 @@ h3 {
 .circle {
   background-color: #e57734;
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 9.38rem;
+  height: 9.38rem;
   border-radius: 50%;
 }
 
-.pulsate-fwd {
-  animation: pulsate-fwd 0.5s linear 3;
-  cursor: default;
-  font-size: 11rem;
+.number {
+  border: #3e2922 2px solid;
+  text-align: center;
+  font-size: 10rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -205,7 +224,6 @@ h3 {
 }
 
 .animate__animated {
-  animation-delay: 2s;
   font-size: 25px;
 }
 

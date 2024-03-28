@@ -126,16 +126,12 @@ const Home = () => {
             <div
               className="circle"
             >
-              <div
-                className="pulsate-fwd"
-              >
+              <div className="number">
                 26
               </div>
-            </div>{" "}
+            </div>
             {/* /circle */}
-            <span
-              className="animate__animated animate__rubberBand"
-            >
+            <span>
               years <b>old</b>
             </span>
           </div>

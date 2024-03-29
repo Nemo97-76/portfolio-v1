@@ -143,31 +143,31 @@ const Home = () => {
           className="Data d-flex justify-content-around mx-auto container mt-5 wrap"
         >
           <div>
-            <p>Name:</p>
-            <p>Tasneem Youssef</p>
+            <p className="div1" style={{ gridArea: "1/1/2/2" }}>Name:</p>
+            <p className="div5" style={{ gridArea: "2/1/3/2" }}>Tasneem Youssef</p>
           </div>
-          <div
-          >
-            <p>Email:</p>
-            <p
-              style={{
-                textDecoration: "underline",
-                textTransform: "none",
-                flexWrap: "wrap",
 
+          <div>
+            <p className="div2" style={{ gridArea: "1/2/2/3" }}>Email:</p>
+            <p
+              className="div6"
+              style={{
+                gridArea: "2/2/3/3",
+                textDecoration: "underline",
               }}
             >
               tasneemyoussef61@gmail.com
             </p>
           </div>
+
           <div>
-            <p>Date of birth:</p>
-            <p>12 December,1997</p>
+            <p className="div3" style={{ gridArea: "1/3/2/4" }}>Date of birth:</p>
+            <p className="div7" style={{ gridArea: "2/3/3/4" }}>12 December,1997</p>
           </div>
 
           <div>
-            <p>From:</p>
-            <p>Alexandria,Egypt</p>
+            <p className="div4" style={{ gridArea: "1/4/2/5" }}>From:</p>
+            <p className="div8" style={{ gridArea: "2/4/3/5" }}>Alexandria,Egypt</p>
           </div>
         </div>
         {/* /data */}
@@ -269,7 +269,6 @@ const Home = () => {
               <Stack spacing={2} >
                 <LinearProgress className="linear" determinate value={95} />
               </Stack>
-
             </div>
 
 

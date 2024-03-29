@@ -272,15 +272,19 @@ h3 {
   display: none;
 }
 
-
-
-.Data div {
-  font-size: 0.6rem;
-  display: flex;
-  flex-direction: column;
+.Data {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  width: 100;
 }
 
+
+
 .Data div p {
+  font-size: 0.7rem;
   font-weight: 700;
   color: grey;
 }
@@ -373,7 +377,7 @@ h3 {
 }
 
 .ArrowUp {
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
@@ -590,24 +594,9 @@ h1 {
 }
 
 .Avatar {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin: auto;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0px 0px 52px -11px rgb(0, 0, 0);
-}
-
-.review2 {
-  background-image: url('./client-sm-3.jpg');
-}
-
-.review3 {
-  background-image: url("./client-sm-2.jpg");
+  box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.3) !important;
 }
 
 .question-mark {
@@ -782,8 +771,8 @@ textarea:focus {
   background-color: #f6c0a6 !important;
   cursor: pointer !important;
   text-align: center !important;
-  width: 45px !important;
-  height: 45px !important;
+  width: 2rem !important;
+  height: 2rem !important;
   border-radius: 50% !important;
 }
 

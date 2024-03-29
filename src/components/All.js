@@ -11,7 +11,7 @@ const All = () => {
     <>
       <div id="projects" className="mt-5">
         <div className="All">
-          <div className="RowOne row wrap">
+          <div className="RowOne row ">
             <div className='AA img '>
               <img alt="port1" src={Portfolio1} loading="lazy" style={{ width: "100%" }} />
               <div>

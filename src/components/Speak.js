@@ -1,7 +1,8 @@
+import { Avatar } from "@mui/joy";
 import React from "react";
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-
+import client1 from "../client-sm-4.jpg"
 const Speak = () => {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex) => {
@@ -29,8 +30,11 @@ const Speak = () => {
                   <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
                 </svg></sup>I have used them twice now. Good rates, very efficient service and priced simply dummy text of the printing and typesetting industry quidam interesset his et. simply dummy text of the printing and typesetting industry. Excellent.</div>
             </div>
-            <div className="AB review1 Avatar mt-3" >
-            </div>  {/* /AB */}
+
+            {/* <div className="AB review1 Avatar mt-3" >
+            
+            </div>   */}{/* /AB */}
+            <Avatar src={client1} className="review1 Avatar mt-3"></Avatar>
             <p className="pt-3">chris Tom <p className="clientDetails">user from UK</p></p>
           </div>
         </Carousel.Item>{/* item1 */}

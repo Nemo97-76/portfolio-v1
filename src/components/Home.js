@@ -47,8 +47,8 @@ const outAnimation = keyframes`
 
 const Home = () => {
   const [open, setOpen] = React.useState(false);
- var currentYear=new Date().getFullYear();
-var number=currentYear-1997
+  var currentYear = new Date().getFullYear();
+  var number = currentYear - 1997
   const animationDuration = 600;
 
   const handleClick = () => {
@@ -365,27 +365,30 @@ var number=currentYear-1997
       </div>
 
       <Speak />
+      <div style={{ width: "80%", margin: "auto", marginTop: "50px", display: "flex", flexDirection: "column" }}>
+        <p
+          className="mb-4 FAQ"
+        >
+          FAQ
+        </p>
+        <h4>
+          Have any questions?
+        </h4>
 
-      <div className="Questions mt-5 mb-5">
+      </div>
+      <div className="Questions mb-5">
+
         <Accordion className="AccordionHolder" >
-          <p
-            className="mb-4 FAQ"
-          >
-            FAQ
-          </p>
-          <h4 className="mb-4">
-            Have any questions?
-          </h4>
-          <Accordion.Item style={{ fontSize: "0.7rem" }} eventKey="0">
-            <Accordion.Header style={{ fontSize: "1rem" }}>How can i help you ?</Accordion.Header>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header >How can i help you ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
               minim veniam
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item style={{ fontSize: "0.7rem" }} eventKey="1">
-            <Accordion.Header style={{ fontSize: "1rem" }}>how you can contact me ?</Accordion.Header>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>how you can contact me ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -393,8 +396,8 @@ var number=currentYear-1997
             </Accordion.Body>
           </Accordion.Item>
 
-          <Accordion.Item style={{ fontSize: "0.7rem" }} eventKey="3">
-            <Accordion.Header style={{ fontSize: "1rem" }}>how can i choose the template ?</Accordion.Header>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header >how can i choose the template ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

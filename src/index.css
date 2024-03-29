@@ -25,6 +25,7 @@ a {
 }
 
 .welcomeMessage {
+  font-size: 0.8rem;
   color: #e57734;
   font-weight: 400;
 }
@@ -728,7 +729,7 @@ textarea:focus {
 }
 
 .typer {
-  height: 7vh !important;
+  height: 5.5vw !important;
 }
 
 .typer span {

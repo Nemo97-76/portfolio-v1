@@ -6,9 +6,9 @@ function Typer() {
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ['MERN-stack developer', 'front-end Developer', 'Back-end Developer'],
-      typeSpeed: 70,
+      typeSpeed: 80,
       backSpeed: 70,
-      startDelay: 70,
+      startDelay: 120,
       loop: true,
       smartBackspace: true,
       showCursor: false

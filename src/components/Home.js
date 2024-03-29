@@ -70,7 +70,6 @@ const Home = () => {
           </span>
           <br />
           <Typer />
-          <br />
           <span className="welcomeMessage">
             From Alexandria,Egypt
           </span>

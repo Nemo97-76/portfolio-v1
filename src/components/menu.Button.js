@@ -34,7 +34,7 @@ export default function MenuButton() {
           <ModalClose id="close-icon" sx={{ position: 'initial' }} />
         </Box>
         <List
-          size="lg"
+          size="sm"
           component="nav"
           sx={{
             flex: 'none',

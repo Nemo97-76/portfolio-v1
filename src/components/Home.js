@@ -3,7 +3,7 @@ import Typer from "./typer.js";
 import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
 import BackToTop from "./BackToTop.js";
 import "animate.css";
-import resume from "../tasneem-youssef-Resume.pdf"
+import resume from "../tasneem youssef Resume.pdf"
 import Stack from '@mui/joy/Stack';
 import { LinearProgress } from '@mui/joy';
 import { Accordion } from 'react-bootstrap'

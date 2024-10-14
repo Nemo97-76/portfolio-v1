@@ -18,7 +18,7 @@ const All = () => {
            
               <div className='AA img '>
               <img alt="port1" src={Portfolio1} loading="lazy" style={{ width: "100%" ,borderRadius:"20px"}} />
-<a href="https://admindashboard76.netlify.app/" target="_blank">
+<a href="https://admindashboard76.netlify.app/" rel="noreferrer" target="_blank">
 <Tooltip title="click to preview">
 <div>
                 <InsertLink className='icon' /> <br />
@@ -31,7 +31,7 @@ const All = () => {
             
  <div className="AB img">
               <img src={ecommerce1} alt="e1" loading="lazy" style={{ width: "100%",borderRadius:"20px" }} />
-              <a href="https://nemolinktree.netlify.app/" target="_blank">
+              <a href="https://nemolinktree.netlify.app/" rel="noreferrer" target="_blank">
                 <Tooltip title="click to preview">
                 <div>
                 <InsertLink className='icon' /> <br />
@@ -43,7 +43,7 @@ const All = () => {
 
             <div className="AC img">
               <img src={portfolio2} alt="port2" loading="lazy" style={{ width: "100%" ,borderRadius:"20px"}} />
-              <a href="https://travelagency00.netlify.app" target="_blank">
+              <a href="https://travelagency00.netlify.app" rel="noreferrer" target="_blank">
                 <Tooltip title="click to preview">
                 <div>
                 <InsertLink className='icon' /> <br />

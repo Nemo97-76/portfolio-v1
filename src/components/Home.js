@@ -143,37 +143,26 @@ const Home = () => {
           className="Data"
         >
          
-          <div className="div1">
-            Name:
-          </div>
-          <div className="div3">
-            Email:
-          </div>
-
-          <div className="div5">
-            Date of birth:
-          </div>
-          
-          <div className="div7">
-            from
-          </div>
-          
-          <div className="div2">
-            tasneem youssef
-          </div>
-
+         <div className="item1">
+          <span className="sub1-item1">Name :</span>
+          <span className="sub2-item1">tasneem youssef</span>
+         </div>{/* /item1 */}
          
-          <div className="div4" style={{textDecoration:"underline"}}>
-            tasneemyoussef61@gmail.com
-          </div>
+         <div className="item2">
+          <span className="sub1-item2">Email :</span>
+          <span className="sub2-item2">tasneemyoussef61@gamil.com</span>
+         </div>{/* /item2 */}
 
-          <div className="div6">
-            12 December,1997
-          </div>
+<div className="item3">
+  <span className="sub1-item3">Date of birth :</span>
+  <span className="sub2-item3">12 december , 1997</span>
+</div>{/* /item3 */}
 
-          <div className="div8">
-            Alexandria,Egypt
-          </div>
+<div className="item4">
+  <span className="sub1-item4">form</span>
+  <span className="sub2-item4">Alexandria, Egypt</span>
+</div>{/* /item4 */}
+
 
         </div>
         {/* /data */}

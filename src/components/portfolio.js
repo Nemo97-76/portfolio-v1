@@ -1,6 +1,6 @@
 import React from "react";
 import { InsertLink } from "@mui/icons-material";
-import portfolio1 from "./images/portfolio 1.jpg"
+import portfolio1 from "./images/Admin Dashboard.png"
 import Portfolio2 from "./images/portfolio2.webp"
 import portfolio3 from "./images/portfolio3.webp"
 const Portfolio = () => {
@@ -13,7 +13,7 @@ const Portfolio = () => {
               <img src={portfolio1} alt="port1" style={{ width: "100%" }} loading="lazy" />
               <div>
                 <InsertLink className='icon' /><br />
-                <span alt="port1" style={{ fontSize: "1rem" }}>portfolio</span>
+                <span alt="port1" style={{ fontSize: "1rem" }}>Admin Dashoard</span>
               </div>
             </div>
 

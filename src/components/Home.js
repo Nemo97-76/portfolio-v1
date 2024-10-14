@@ -132,7 +132,7 @@ const Home = () => {
               </div>
             </div>
             {/* /circle */}
-            <span>
+            <span style={{fontSize:"18px"}}>
               years <b>old</b>
             </span>
           </div>
@@ -201,10 +201,11 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <h5 className="myskills mt-2">My skills</h5>
+            <h3 className="myskills mt-2">My skills</h3>
             <div
               className="detailsBox"
             >
+              
               <div>
                 <h5>HTML/CSS</h5>
                 <span className="eductiondetails">
@@ -212,7 +213,9 @@ const Home = () => {
                   typesetting industry. Lorem Ipsum has been the dummy text.
                 </span>
               </div>
+
               <hr />
+
               <div>
                 <h5>bootstrap</h5>
                 <span className="eductiondetails">
@@ -220,8 +223,11 @@ const Home = () => {
                   typesetting industry. Lorem Ipsum has been the dummy text.
                 </span>
               </div>
-            </div>
-          </div>
+              
+
+            </div>{/* /detailsBox */}
+
+          </div>{/* /columnOne */}
 
           <div
             className="columnTwo"
@@ -229,6 +235,7 @@ const Home = () => {
             <div
               className="detailsBox"
             >
+              
               <div>
                 <h5>javaScript</h5>
                 <span className="eductiondetails">
@@ -247,12 +254,21 @@ const Home = () => {
               <hr />
               <div>
                 <h5>Nodejs.</h5>
-                <span>Alexandria unversity/2018-2022</span> <br></br>
                 <span className="eductiondetails">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the dummy text.
                 </span>
+              </div> 
+              <hr/>
+              <div>
+                <h5>MongoDB</h5>
+                <span className="eductiondetails">
+                Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the dummy text.
+                </span>
               </div>
+              
+             
             </div>
           </div>
         </div>

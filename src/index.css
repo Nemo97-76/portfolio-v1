@@ -25,7 +25,7 @@ a {
 }
 
 .welcomeMessage {
-  font-size: 0.8rem;
+  font-size: 20px;
   color: #e57734;
   font-weight: 400;
 }
@@ -154,7 +154,7 @@ h3 {
 }
 
 .BioHeading {
-  font-size: 1rem;
+  font-size: 23px;
 }
 
 .BioHeading b {
@@ -162,7 +162,7 @@ h3 {
 }
 
 .Bio {
-  font-size: 0.7rem;
+  font-size: 18px;
 }
 
 .ResumeColumns {
@@ -287,7 +287,7 @@ h3 {
 
 
 .Data div p {
-  font-size: 0.7rem;
+  font-size: 15px;
   font-weight: 700;
   color: grey;
 }
@@ -488,13 +488,15 @@ h1 {
   border: none !important;
 }
 
+
 .img::before {
   position: absolute;
   content: "";
   top: 0;
   border-radius: 20px;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;

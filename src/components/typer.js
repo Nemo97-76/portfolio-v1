@@ -19,7 +19,7 @@ function Typer() {
   }, []);
   return (
     <div className="typer">
-      <span ref={el} style={{ fontSize: "5.5vw" }} />
+      <span ref={el} />
     </div>
   );
 }

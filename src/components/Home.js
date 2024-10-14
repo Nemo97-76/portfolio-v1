@@ -70,6 +70,7 @@ const Home = () => {
           </span>
           <br />
           <Typer />
+          <br/>
           <span className="welcomeMessage">
             From Alexandria,Egypt
           </span>
@@ -139,33 +140,41 @@ const Home = () => {
           {/* /anime */}
         </div>
         <div
-          className="Data d-flex justify-content-around mx-auto container mt-5 wrap"
+          className="Data"
         >
-          <div className="item1">
-            <p>Name:</p>
-            <p>Tasneem Youssef</p>
+         
+          <div className="div1">
+            Name:
+          </div>
+          <div className="div3">
+            Email:
           </div>
 
-          <div className="item2">
-            <p>Email:</p>
-            <p
-              style={{
-                textDecoration: "underline",
-              }}
-            >
-              tasneemyoussef61@gmail.com
-            </p>
+          <div className="div5">
+            Date of birth:
+          </div>
+          
+          <div className="div7">
+            from
+          </div>
+          
+          <div className="div2">
+            tasneem youssef
           </div>
 
-          <div className="item3">
-            <p>Date of birth:</p>
-            <p>12 December,1997</p>
+         
+          <div className="div4" style={{textDecoration:"underline"}}>
+            tasneemyoussef61@gmail.com
           </div>
 
-          <div className="item4">
-            <p>From:</p>
-            <p>Alexandria,Egypt</p>
+          <div className="div6">
+            12 December,1997
           </div>
+
+          <div className="div8">
+            Alexandria,Egypt
+          </div>
+
         </div>
         {/* /data */}
       </div>
@@ -391,7 +400,7 @@ const Home = () => {
       <div className="Questions mb-5">
 
         <Accordion className="AccordionHolder" >
-          <Accordion.Item eventKey="0">
+          <Accordion.Item className="AccordionItem"  eventKey="0">
             <Accordion.Header >How can i help you ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -399,7 +408,7 @@ const Home = () => {
               minim veniam
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
+          <Accordion.Item className="AccordionItem" eventKey="1">
             <Accordion.Header>how you can contact me ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -408,7 +417,7 @@ const Home = () => {
             </Accordion.Body>
           </Accordion.Item>
 
-          <Accordion.Item eventKey="3">
+          <Accordion.Item className="AccordionItem" eventKey="3">
             <Accordion.Header >how can i choose the template ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -420,7 +429,7 @@ const Home = () => {
         <div className="question-mark">
           <img src={questionMark} alt="questionMark" className="qusetionImg" />
         </div>
-      </div>
+      </div> {/* /questions */}
       <div className="getInTouch" id="contactMe">
         <div className="leftInfo">
           <div className="column1 pt-5">

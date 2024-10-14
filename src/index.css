@@ -62,8 +62,8 @@ a {
 }
 
 .Arrow {
-
-  font-size: 2rem !important;
+margin-top: 2vh;
+  font-size: 40px !important;
   color: white;
   animation-name: arrowMovment;
   animation-timing-function: ease-in-out;
@@ -229,12 +229,12 @@ h3 {
 
 .Questions {
   display: flex;
-  width: 80%;
+  width:60vw;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-  height: fit-content;
+  height:35vh;
   margin: auto;
   gap: 5px;
 }
@@ -247,7 +247,9 @@ h3 {
   padding: 5px;
   border-radius: 5px;
 }
-
+.AccordionItem{
+  width: 35vw;
+}
 .AccordionHolder {
   width: 50%;
   top: 70px;
@@ -274,14 +276,41 @@ h3 {
 }
 
 .Data {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  height: fit-content;
-  gap: 5px;
+width: 100%;
+margin: auto;
+margin-left: 15px;
+margin-top: 25px;
+  display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 250px;
+grid-row-gap: 5px;
+color: grey;
+font-weight: 600;
+}
+.div1{
+  grid-area: 1/1/2/2;
+}
+.div2{
+  grid-area: 2/1/3/2;
+}
+.div3{
+  grid-area: 1/2/2/3;
+}
+.div4{
+  grid-area: 2/2/3/3;
+}
+.div5{
+  grid-area: 1/3/2/4;
+}
+.div6{
+  grid-area: 2/3/3/4;
+}
+.div7{
+  grid-area: 1/4/2/5;
+}
+.div8{
+  grid-area: 2/4/3/5;
 }
 
 
@@ -320,17 +349,17 @@ h3 {
 }
 
 .carousel {
-  height: 80vh;
+  height: fit-content;
 }
 
 .CarosuelItem {
-  padding-top: 15vh !important;
-  height: inherit !important;
+  padding-top: 5vh ;
+  height: 55vh;
   padding-bottom: 10vh;
 }
 
 #clientSpeak {
-  height: 100vh;
+  height: 70vh;
   background-color: #b6acad;
   padding-top: 3vh;
 }
@@ -427,8 +456,7 @@ h1 {
 
 .img {
   position: relative;
-  margin-bottom: 5vh;
-  width: 15rem !important;
+  width: 285px !important;
   height: fit-content;
   border-radius: 20px;
   background-position: center;
@@ -501,9 +529,10 @@ h1 {
   background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;
 }
-
 .img img {
   object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .img:hover.img::before {
@@ -576,6 +605,8 @@ h1 {
 }
 
 .Avatar {
+  width: 60px !important;
+  height: 60px !important;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.3) !important;
@@ -628,9 +659,10 @@ h1 {
 }
 
 .icons {
+margin-top: 2.5vh !important;
   display: flex;
-  justify-content: space-between;
-  width: 60%;
+  justify-content: space-evenly !important;
+  width: 100%;
   margin: auto;
 }
 
@@ -665,7 +697,8 @@ textarea:focus {
 }
 
 .footer p {
-  font-size: 0.5rem;
+  font-weight: 100;
+  font-size: 15px;
   color: white;
   position: absolute;
   left: 50%;
@@ -685,7 +718,7 @@ textarea:focus {
 .menu {
   position: relative;
   top: -10px;
-  font-size: 1.5rem !important;
+  font-size: 35px !important;
 }
 
 .iconsRow {
@@ -708,10 +741,11 @@ textarea:focus {
 }
 
 .typer {
-  height: 5.5vw !important;
+  height: 3vh !important;
 }
 
 .typer span {
+  font-size: 60px;
   color: white;
 }
 
@@ -738,8 +772,8 @@ textarea:focus {
 #projects {
   display: flex;
   flex-direction: column;
-  row-gap: 5%;
-  width: 80%;
+  row-gap: 0.5vh;
+  width: 65%;
   height: fit-content;
   margin: auto;
 }

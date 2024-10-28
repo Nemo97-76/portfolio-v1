@@ -13,9 +13,6 @@ body {
 a {
   text-decoration: none !important;
 }
-.item1{
-
-}
 
 .InteroHeading {
   text-align: center;
@@ -262,13 +259,6 @@ h3 {
   align-self: auto;
 }
 
-.HiringBTN {
-  font-size: 1.5rem !important;
-  border: 2px solid #f6c0a6 !important;
-  color: black !important;
-  display: block !important;
-  margin: auto !important;
-}
 
 #btn-back-to-top {
   position: fixed;
@@ -350,6 +340,14 @@ h3 {
   font-size: 0.6rem !important;
   color: whitesmoke !important;
 }
+.QuestionHeading{
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .reveal {
   position: relative;
@@ -363,10 +361,6 @@ h3 {
   opacity: 1;
 }
 
-
-.ArrowUp {
-  color: white;
-}
 
 .FadBox:hover {
   background-image: linear-gradient(to left bottom, #ff9f66, #f9955a, #f28b4d, #ec8141, #e57734) !important;
@@ -388,6 +382,7 @@ h3 {
 .ArrowUp {
   font-size: 1.5rem !important;
   position: relative;
+  color: white;
   top: 50%;
   transform: translate(0, -50%);
 }
@@ -547,8 +542,13 @@ h1 {
 
 
 .HireMe {
-  font-size: 2rem !important;
   transition: All 0.3s;
+  font-size: 2rem !important;
+  border: 2px solid #f6c0a6 !important;
+  color: black !important;
+  display: block !important;
+  margin: auto !important;
+
 }
 
 .HireMe:hover {
@@ -771,4 +771,44 @@ textarea:focus {
 
 .Accordion {
   min-width: 150px !important;
+}
+.navigation{
+  width: 100%;
+  height: 50px;
+}
+.navigation ul{
+background-color: blue;
+height: fit-content;
+width:fit-content;
+margin-top: 50px;
+position: absolute;
+}
+.navigation ul li{
+  list-style-type: none;
+  padding-right:10px ;
+}
+.hamburger{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: none;
+  justify-content: space-around;
+  flex-flow: column wrap;
+  z-index: 10;
+}
+@media (max-width:767px) {
+  .hamburger{
+    display: flex;
+    padding-top: 10px;
+    margin-left: 10px;
+    z-index: 10;
+  }
+}
+.burger{
+width: 2rem;
+height: 0.25rem;
+border-radius: 10px;
+background-color: black;
+transform-origin: 1px;
+transition: 0.3s all linear;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useEffect} from "react";
 import { InsertLink } from "@mui/icons-material";
 import Portfolio1 from "./images/Admin Dashboard.png"
 import portfolio2 from "./images/travel agency.png"
@@ -7,16 +7,22 @@ import ecommerce1 from "./images/linktree.png"
 import ecommerce2 from "./images/website-w-reactjs.png"
 import ecommerce3 from "./images/ecommerce3.png"
 import { Tooltip } from "@mui/joy";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 
 const All = () => {
-  return (
+  useEffect(()=>{
+    AOS.init()
+  },[])
+
+    return (
     <>
       <div id="projects" className="mt-5">
         <div className="All">
           <div className="RowOne row ">
            
-              <div className='AA img '>
+              <div className=' img' data-aos="fade-up" data-aos-delay="100" data-aos-duration="15000">
               <img alt="port1" src={Portfolio1} loading="lazy"  />
 <a href="https://admindashboard76.netlify.app/" rel="noreferrer" target="_blank">
 <Tooltip title="click to preview">
@@ -29,7 +35,7 @@ const All = () => {
 </a>
             </div>{/* /img1 */}
             
- <div className="AB img">
+ <div className=" img" data-aos="fade-up" data-aos-delay="200" data-aos-duration="15000">
               <img src={ecommerce1} alt="e1" loading="lazy"  />
               <a href="https://nemolinktree.netlify.app/" rel="noreferrer" target="_blank">
                 <Tooltip title="click to preview">
@@ -41,7 +47,7 @@ const All = () => {
               </a>
             </div>{/* /img2 */}
 
-            <div className="AC img">
+            <div className=" img" data-aos="fade-up" data-aos-delay="300" data-aos-duration="15000">
               <img src={portfolio2} alt="port2" loading="lazy"  />
               <a href="https://travelagency00.netlify.app" rel="noreferrer" target="_blank">
                 <Tooltip title="click to preview">
@@ -58,7 +64,7 @@ const All = () => {
           </div>{/* /RowOne */}
           <div className="RowTwo row wrap" style={{ justifyContent: 'space-around', marginTop: "5%" }}>
            
-            <div className='BA img'>
+            <div className=' img' data-aos="fade-up" data-aos-delay="400" data-aos-duration="15000">
               <img src={ecommerce2} alt="e2" loading="lazy"  />
             <a href="https://website-w-reactjs.netlify.app/" rel="noreferrer" target="_blank"> 
               <Tooltip title="click to preview">
@@ -70,7 +76,7 @@ const All = () => {
             </a>            
             </div>{/* /img4 */}
            
-            <div className='BB img'>
+            <div className=' img' data-aos="fade-up" data-aos-delay="500" data-aos-duration="15000">
               <img src={portfolio3} alt="port3" loading="lazy"  />
               <a href="https://yourage24.netlify.app/" rel="noreferrer" target="_blank">
 <Tooltip title="click to preview">
@@ -84,7 +90,7 @@ const All = () => {
               
             </div>{/* /img5 */}
 
-            <div className='BC img'>
+            <div className=' img' data-aos="fade-up" data-aos-delay="600" data-aos-duration="15000">
               <img src={ecommerce3} alt="e3" loading="lazy"  />
               <Tooltip title="comming soon">
               <div>

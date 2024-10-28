@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Typer from "./typer.js";
 import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
 import BackToTop from "./BackToTop.js";
@@ -21,7 +21,11 @@ import { IoMdClose } from "react-icons/io";
 import DownloadButton from "./downloadButton.js";
 import Navigator from './navigator.js'
 import Speak from './Speak.js';
-import questionMark from "./images/questionMark.png"
+import "animate.css"
+import questionMark from "./images/questionMark.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Hamburger from "./hamburger.jsx"
 const inAnimation = keyframes`
   0% {
     transform: scale(0);
@@ -46,6 +50,16 @@ const outAnimation = keyframes`
 
 
 const Home = () => {
+const [hamburgerOpen,setHamburger]=useState(false)
+const toggleHamburger=()=>{
+  setHamburger(!hamburgerOpen)
+}
+
+  //AOS initialize
+  useEffect(()=>{
+    AOS.init()
+  },[])
+  
   const [open, setOpen] = React.useState(false);
   var currentYear = new Date().getFullYear();
   var number = currentYear - 1997
@@ -96,15 +110,15 @@ const Home = () => {
         id="AboutMe"
       >
         <p
-          className="mb-4 AboutMeTitle"
+          className="mb-4 AboutMeTitle" data-aos="fade-up" data-aos-delay="300" data-aos-duration="15000"
         >
           About Me
         </p>
-        <h3 className="mb-4 AboutMeHeading">
+        <h3 className="mb-4 AboutMeHeading" data-aos="fade-up" data-aos-duration="15000" data-aos-delay="300">
           Know Me More
         </h3>
         <div
-          className="detailsRow"
+          className="detailsRow "  data-aos="fade-up" data-aos-delay="100" data-aos-duration="15000"
         >
           <div className="content" style={{ width: "45%" }}>
             <span id="title" className="BioHeading">
@@ -123,12 +137,12 @@ const Home = () => {
             </span>
           </div>
           <div
-            className="anime"
+            className="anime" data-aos="fade-up" data-aos-delay="200" data-aos-duration="15000"
           >
             <div
               className="circle"
             >
-              <div className="number">
+              <div className="number animate__heartBeat">
                 {number}
               </div>
             </div>
@@ -143,22 +157,22 @@ const Home = () => {
           className="Data"
         >
          
-         <div className="item1">
+         <div className="item1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="15000">
           <span className="sub1-item1">Name :</span>
           <span className="sub2-item1">tasneem youssef</span>
          </div>{/* /item1 */}
          
-         <div className="item2">
+         <div className="item2" data-aos="fade-up" data-aos-delay="400" data-aos-duration="15000">
           <span className="sub1-item2">Email :</span>
           <span className="sub2-item2">tasneemyoussef61@gamil.com</span>
          </div>{/* /item2 */}
 
-<div className="item3">
+<div className="item3" data-aos="fade-up" data-aos-delay="500" data-aos-duration="15000">
   <span className="sub1-item3">Date of birth :</span>
   <span className="sub2-item3">12 december , 1997</span>
 </div>{/* /item3 */}
 
-<div className="item4">
+<div className="item4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="15000">
   <span className="sub1-item4">form</span>
   <span className="sub2-item4">Alexandria, Egypt</span>
 </div>{/* /item4 */}
@@ -178,14 +192,14 @@ const Home = () => {
         >
           Resume
         </p>
-        <h3 className="BioHeading mb-4">
+        <h3 className="BioHeading mb-4"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="15000">
           A summary of my Resume
         </h3>
         <div
           className="ResumeColumns"
         >
           <div
-            className="columnOne"
+            className="columnOne" data-aos="fade-up" data-aos-duration="15000" data-aos-delay="200"
           >
             <h3 className="myskills" >My Education</h3>
             <div className="detailsBox"
@@ -228,7 +242,7 @@ const Home = () => {
           </div>{/* /columnOne */}
 
           <div
-            className="columnTwo"
+            className="columnTwo" data-aos="fade-up" data-aos-duration="15000" data-aos-delay="300"
           >
             <div
               className="detailsBox"
@@ -272,7 +286,7 @@ const Home = () => {
         </div>
         <div className="row bars mx-auto mt-5">
           <div className="progressBarleft">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="15000" data-aos-delay="100">
               <div className="bardetails">
                 <h5>web design</h5>
                 <h5>95%</h5>
@@ -283,7 +297,7 @@ const Home = () => {
             </div>
 
 
-            <div>
+            <div data-aos="fade-up" data-aos-duration="15000" data-aos-delay="200">
               <div className="bardetails">
                 <h5>HTML/CSS</h5>
                 <h5>95%</h5>
@@ -294,7 +308,7 @@ const Home = () => {
 
             </div>
 
-            <div>
+            <div data-aos="fade-up" data-aos-duration="15000" data-aos-delay="300">
               <div className="bardetails">
                 <h5>bootstrap</h5>
                 <h5>90%</h5>
@@ -307,7 +321,7 @@ const Home = () => {
 
           </div>
           <div className="progressBarRight">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="15000" data-aos-delay="400">
               <div className="bardetails">
                 <h5>javaScript</h5>
                 <h5>80%</h5>
@@ -318,7 +332,7 @@ const Home = () => {
 
             </div>
 
-            <div >
+            <div data-aos="fade-up" data-aos-duration="15000" data-aos-delay="500">
               <div className="bardetails">
                 <h5>Reactjs.</h5>
                 <h5>85%</h5>
@@ -329,7 +343,7 @@ const Home = () => {
 
             </div>
 
-            <div >
+            <div data-aos="fade-up" data-aos-duration="15000" data-aos-delay="600">
               <div className="bardetails">
                 <h5>Nodejs.</h5>
                 <h5>80%</h5>
@@ -355,7 +369,7 @@ const Home = () => {
         >
           portfolio
         </p>
-        <h3 className="mt-4">
+        <h3 className="mt-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="15000">
           some of my recent projects
         </h3>
         <Navigator />
@@ -364,18 +378,21 @@ const Home = () => {
 
       <div className="Hire mb-5">
         <div>
-          <h2>Interested in working with me?<br></br>
-            <Button
-              className="animate__animated HiringBTN animate__rubberBand mt-5 bg-transparent text-white HireMe"
+          <h2 data-aos="fade-right" data-aos-delay="1000" data-aos-easing="ease" >Interested in working with me?<br></br>
+           
+          </h2>
+          <Button
+          data-aos="fade-left" 
+          data-aos-delay="1500"
+              className="mt-5 bg-transparent text-white HireMe"
             >
               Hire me
             </Button>
-          </h2>
         </div>
       </div>
 
       <Speak />
-      <div style={{ width: "80%", margin: "auto", marginTop: "50px", display: "flex", flexDirection: "column" }}>
+      <div className="QuestionHeading" data-aos="fade-right">
         <p
           className="mb-4 FAQ"
         >
@@ -386,9 +403,9 @@ const Home = () => {
         </h4>
 
       </div>
-      <div className="Questions mb-5">
+      <div className="Questions mb-5" >
 
-        <Accordion className="AccordionHolder" >
+        <Accordion className="AccordionHolder" data-aos="fade-up" data-aos-delay="1000">
           <Accordion.Item className="AccordionItem"  eventKey="0">
             <Accordion.Header >How can i help you ?</Accordion.Header>
             <Accordion.Body>
@@ -415,29 +432,33 @@ const Home = () => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <div className="question-mark">
+        <div data-aos="fade-up" data-aos-delay="1500" className="question-mark">
           <img src={questionMark} alt="questionMark" className="qusetionImg" />
         </div>
+
       </div> {/* /questions */}
+
       <div className="getInTouch" id="contactMe">
+
         <div className="leftInfo">
+
           <div className="column1 pt-5">
-            <h2>let's get in touch</h2>
-            <p className="mt-4">I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.</p>
-          </div>
-          <div className="column1 ">
-            <h3>livig in:</h3>
-            <p>45 Alexandria, Egypt </p>
-          </div>
+            <h2 data-aos="fade-up"> let's get in touch</h2>
+            <p data-aos="fade-up" data-aos-delay="300" className="mt-4">I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.</p>
+          </div> {/* /cloumn1 */}
 
           <div className="column1 ">
-            <h3>call:</h3>
-            <p>+20 100 00 797 61</p>
-          </div>
+            <h3 data-aos="fade-up"  data-aos-delay="350">livig in:</h3>
+            <p data-aos="fade-up" data-aos-delay="400">45 Alexandria, Egypt </p>
+          </div>{/* /cloumn1 */}
+
+          <div className="column1 ">
+            <h3 data-aos="fade-up" data-aos-delay="450">call:</h3>
+            <p data-aos="fade-up" data-aos-delay="500">+20 100 00 797 61</p>
+          </div>{/* /cloumn1 */}
 
           <div className="icons">
-
-            <Sheet className="sheet" >
+            <Sheet className="sheet"   data-aos="fade-up" data-aos-delay="550" >
               <Tooltip title="facebook" arrow placement="bottom">
                 <a href="https://www.facebook.com/tasn13eem/">
                   <BsFacebook id="ICON" />
@@ -445,7 +466,7 @@ const Home = () => {
               </Tooltip>
             </Sheet>
 
-            <Sheet className="sheet">
+            <Sheet className="sheet"   data-aos="fade-up" data-aos-delay="600">
               <Tooltip title="instagram" arrow placement="bottom">
                 <div>
                   <BsInstagram id="ICON" />
@@ -453,36 +474,42 @@ const Home = () => {
               </Tooltip>
             </Sheet>
 
-            <Sheet className="sheet">
+            <Sheet className="sheet" data-aos="fade-up" data-aos-delay="650">
               <Tooltip title="LinkedIn" arrow placement="bottom">
-                <div>
-                  <SiLinkedin id="ICON" />
+                <div >
+                  <SiLinkedin id="ICON"  />
                 </div>
               </Tooltip>
             </Sheet>
 
-            <Sheet className="sheet">
+            <Sheet className="sheet" data-aos="fade-up" data-aos-delay="700">
               <Tooltip title="gitHub" arrow placement="bottom">
-                <a href="https://github.com/Nemo97-76">
+                <a  href="https://github.com/Nemo97-76">
                   <BsGithub id="ICON" />
                 </a>
               </Tooltip>
             </Sheet>
-          </div>
-        </div>
+          </div>{/* /icons */}
+        </div>{/* /left Info */}
 
         <div className="rightform ">
           <form id="Form">
-            <label className="mt-5">what's your Name</label><br></br>
-            <input type="text" required className="nameInput" />
+<div data-aos="fade-up">
+<label className="mt-5">what's your Name</label><br></br>
+<input type="text" required className="nameInput" />
+</div>
 
+<div  data-aos="fade-up" data-aos-delay="750">
             <label className="mt-4">your email address</label><br></br>
             <input type="email" required className="nameInput" />
-
+</div>
+      <div  data-aos="fade-up" data-aos-delay="800">
             <label className="mt-4">how can i help you</label><br></br>
             <textarea maxLength={200} required></textarea>
-
+</div>
             <Button
+             data-aos="fade-up"
+             data-aos-delay="850"
               className="mt-4 sendBTN"
               type="reset"
               onClick={handleClick}>
@@ -511,11 +538,24 @@ const Home = () => {
               </Button>
             </Snackbar>
           </form>
-        </div>
-      </div>
-      <div className="footer text-center " >
+        </div>{/* /rightform */}
+      </div>{/* /getInTouch */}
+
+      <div className="footer text-center "  >
         <p>copy © {new Date().getFullYear()} <span className="text">Tasneem Youssef</span>. All rights reserved.</p>
       </div>
+
+<div className="navigation">
+<ul style={{display:`${hamburgerOpen?"inline":"none"}`}}>
+  <li>home</li>
+  <li>about</li>
+  <li>contact us</li>
+</ul>
+<div className="hamburger" onClick={toggleHamburger}>
+  <Hamburger isOpen={hamburgerOpen}/>
+</div>
+
+</div>
 
     </>
   );

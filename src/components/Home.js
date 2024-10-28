@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Typer from "./typer.js";
 import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
 import BackToTop from "./BackToTop.js";
@@ -25,7 +25,6 @@ import "animate.css"
 import questionMark from "./images/questionMark.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Hamburger from "./hamburger.jsx"
 const inAnimation = keyframes`
   0% {
     transform: scale(0);
@@ -50,10 +49,7 @@ const outAnimation = keyframes`
 
 
 const Home = () => {
-const [hamburgerOpen,setHamburger]=useState(false)
-const toggleHamburger=()=>{
-  setHamburger(!hamburgerOpen)
-}
+
 
   //AOS initialize
   useEffect(()=>{
@@ -545,17 +541,6 @@ const toggleHamburger=()=>{
         <p>copy © {new Date().getFullYear()} <span className="text">Tasneem Youssef</span>. All rights reserved.</p>
       </div>
 
-<div className="navigation">
-<ul style={{display:`${hamburgerOpen?"inline":"none"}`}}>
-  <li>home</li>
-  <li>about</li>
-  <li>contact us</li>
-</ul>
-<div className="hamburger" onClick={toggleHamburger}>
-  <Hamburger isOpen={hamburgerOpen}/>
-</div>
-
-</div>
 
     </>
   );

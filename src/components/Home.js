@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {  useEffect } from "react";
 import Typer from "./typer.js";
 import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
 import BackToTop from "./BackToTop.js";
@@ -50,17 +50,27 @@ const outAnimation = keyframes`
 
 const Home = () => {
 
-
   //AOS initialize
   useEffect(()=>{
     AOS.init()
   },[])
   
   const [open, setOpen] = React.useState(false);
-  var currentYear = new Date().getFullYear();
-  var number = currentYear - 1997
-  const animationDuration = 600;
+  var monthNow=new Date().getMonth()
+var yearNow=new Date().getFullYear()
+var dayNow= new Date().getDate()
+let age = yearNow-1997
+if (monthNow===11){
+  if(dayNow===16){
+    age = yearNow-1997
+    }
+  --age
+}else{
+--age
+}
 
+
+  const animationDuration = 600;
   const handleClick = () => {
     setOpen(true);
   };
@@ -80,12 +90,12 @@ const Home = () => {
           </span>
           <br />
           <Typer />
-          <br/>
           <span className="welcomeMessage">
             From Alexandria,Egypt
           </span>
-          <br></br>
-          <Button
+          </h2>
+<div className="NavToResume">
+<Button
             className="ResumeButton mt-5"
           >
             Resume
@@ -96,7 +106,7 @@ const Home = () => {
               className="Arrow"
             />
           </Nav.Link>
-        </h2>
+</div>
         <BackToTop />
       </div>
 
@@ -139,7 +149,7 @@ const Home = () => {
               className="circle"
             >
               <div className="number animate__heartBeat">
-                {number}
+                {age}
               </div>
             </div>
             {/* /circle */}

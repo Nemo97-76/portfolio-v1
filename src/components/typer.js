@@ -8,10 +8,10 @@ function Typer() {
       strings: ['MERN-stack developer', 'front-end Developer', 'Back-end Developer'],
       typeSpeed: 80,
       backSpeed: 70,
-      startDelay: 120,
+      startDelay: 300,
       loop: true,
       smartBackspace: true,
-      showCursor: false
+      showCursor: true,
     });
     return () => {
       typed.destroy();

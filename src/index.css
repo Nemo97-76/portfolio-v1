@@ -17,14 +17,22 @@ a {
 .InteroHeading {
   text-align: center;
   width: 80%;
-  height: 15%;
+  height: 15vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.NavToResume{
+  height: 15vh;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform:translate(-50%,-50%)
+}
 
 .welcomeMessage {
+  margin-top: -25px;
   font-size: 20px;
   color: #e57734;
   font-weight: 400;
@@ -62,6 +70,8 @@ a {
 }
 
 .Arrow {
+  margin-left: 50%;
+  transform: translateX(-50%);
 margin-top: 2vh;
   font-size: 40px !important;
   color: white;
@@ -712,15 +722,23 @@ textarea:focus {
   color: white !important;
   font-size: 1.7rem !important;
   font-family: sans-serif !important;
-  font-weight: 700 !important;
   position: absolute !important;
   right: 20px !important;
+
 }
 
-.typer {
-  height: 3vh !important;
+#Name:hover{
+  animation-name: nameAnimate;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 
+@keyframes nameAnimate {
+  50%{
+    margin-top: -15px;
+  }
+}
 .typer span {
   font-size: 60px;
   color: white;

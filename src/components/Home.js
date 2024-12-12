@@ -1,11 +1,10 @@
-import React, {  useEffect } from "react";
+import React, {useEffect,useState} from "react";
 import Typer from "./typer.js";
 import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
 import BackToTop from "./BackToTop.js";
-import "animate.css";
 import resume from "../tasneem youssef Resume.pdf"
 import Stack from '@mui/joy/Stack';
-import { LinearProgress } from '@mui/joy';
+import { Box,  LinearProgress } from '@mui/joy';
 import { Accordion } from 'react-bootstrap'
 import Sheet from '@mui/joy/Sheet';
 import Tooltip from '@mui/joy/Tooltip';
@@ -21,10 +20,10 @@ import { IoMdClose } from "react-icons/io";
 import DownloadButton from "./downloadButton.js";
 import Navigator from './navigator.js'
 import Speak from './Speak.js';
-import "animate.css"
 import questionMark from "./images/questionMark.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 const inAnimation = keyframes`
   0% {
     transform: scale(0);
@@ -46,8 +45,6 @@ const outAnimation = keyframes`
     opacity: 0;
   }
 `;
-
-
 const Home = () => {
 
   //AOS initialize
@@ -55,7 +52,7 @@ const Home = () => {
     AOS.init()
   },[])
   
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   var monthNow=new Date().getMonth()
 var yearNow=new Date().getFullYear()
 var dayNow= new Date().getDate()
@@ -81,7 +78,10 @@ if (monthNow===11){
 
   return (
     <>
-      <div className="home" id="home">
+            <Box className="themeToggle">
+
+       </Box>
+                  <div className="home" id="home">
         <h2
           className="InteroHeading"
         >
@@ -95,11 +95,13 @@ if (monthNow===11){
           </span>
           </h2>
 <div className="NavToResume">
+<Nav.Link href="#Resume">
 <Button
             className="ResumeButton mt-5"
           >
             Resume
           </Button>
+</Nav.Link>
           <br></br>
           <Nav.Link href="#Resume">
             <ArrowDownwardRoundedIcon
@@ -148,7 +150,7 @@ if (monthNow===11){
             <div
               className="circle"
             >
-              <div className="number animate__heartBeat">
+              <div className="number ">
                 {age}
               </div>
             </div>
@@ -550,9 +552,7 @@ if (monthNow===11){
       <div className="footer text-center "  >
         <p>copy © {new Date().getFullYear()} <span className="text">Tasneem Youssef</span>. All rights reserved.</p>
       </div>
-
-
-    </>
+   </>
   );
 };
 export default Home;

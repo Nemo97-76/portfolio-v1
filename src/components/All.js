@@ -6,7 +6,7 @@ import portfolio3 from "./images/age calculator.png"
 import ecommerce1 from "./images/linktree.png"
 import ecommerce2 from "./images/website-w-reactjs.png"
 import ecommerce3 from "./images/ecommerce3.png"
-import { Tooltip } from "@mui/joy";
+import  Tooltip  from "@mui/joy/Tooltip";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 

@@ -264,11 +264,11 @@ h3 {
 .Questions {
   display: flex;
   width:60vw;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: center;
-  height:35vh;
+  height:300px;
   margin: auto;
   gap: 5px;
 }
@@ -303,7 +303,7 @@ h3 {
 .AccordionHolder {
   width: 50%;
   top: 70px;
-  height: max-content;
+  height: 250px;
   flex-grow: 2;
   flex-basis: 1;
   align-self: auto;
@@ -427,13 +427,13 @@ height: 450px;
 #download-pdf-button {
   transition: all 0.3s !important;
   font-size: 20px !important;
-  color: black !important;
+  color: var(--primary-text-color) !important;
   background-color: transparent !important;
   border: 2px solid #01757a !important;
 }
 
 #download-pdf-button:hover {
-  color: white !important;
+  color: var(--background-color) !important;
   background-color: #01757a !important;
 }
 
@@ -622,7 +622,7 @@ h1 {
 }
 
 .NaV button:focus {
-  color: black;
+  color: var(--primary-text-color);
   font-weight: 700;
   border-bottom: 2px solid #f6c0a6;
 }

@@ -374,13 +374,31 @@ h3 {
 
 .CarosuelItem {
   padding-top: 5vh ;
-height: 45vh;
+height: 40vh;
   }
 
 #clientSpeak {
-  height: 60vh;
+  height: 55vh;
   background-color: var(--clinet-bg);
   padding-top: 3vh;
+}
+
+
+@media (max-width:768px)  {
+  .CarosuelItem{
+    height:90vh ;
+  }
+  #clientSpeak{
+    height: 110vh;
+  }
+}
+@media (max-width:768px) {
+  .CarosuelItem{
+    height: 60vh;
+  }
+  #clientSpeak{
+    height: 75vh;
+  }
 }
 
 .CarosuelItem p {

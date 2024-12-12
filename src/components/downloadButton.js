@@ -15,7 +15,7 @@ const DownloadButton = ({ fileurl, filename }) => {
       <Button
         onClick={handelDownload}
         id="download-pdf-button"
-        className="bg-light btn"
+        className="btn"
       >
         download Resume
       </Button>

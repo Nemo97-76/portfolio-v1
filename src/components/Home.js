@@ -23,6 +23,8 @@ import Speak from './Speak.js';
 import questionMark from "./images/questionMark.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Toggle from "./Toggle.jsx";
+import useLocalStorage from 'use-local-storage';
 
 const inAnimation = keyframes`
   0% {
@@ -75,11 +77,18 @@ if (monthNow===11){
   const handleClose = () => {
     setOpen(false);
   };
+// eslint-disable-next-line
+const preference=window.matchMedia("(prefers-color-scheme: dark)").matches;
+const [isDark,setIsDark]=useLocalStorage("isDark",false);
 
   return (
-    <>
-            <Box className="themeToggle">
+    <div className="App" data-theme={isDark?"dark":"light"}>
 
+            <Box className="themeToggle">
+<Toggle
+isChecked={isDark}
+handleChange={()=>setIsDark(!isDark)}
+/>
        </Box>
                   <div className="home" id="home">
         <h2
@@ -193,7 +202,7 @@ if (monthNow===11){
 
       <div
         id='Resume'
-        className="Resume bg-light"
+        className="Resume "
       >
         <p
           className="mb-4 ResumeTitle"
@@ -415,15 +424,15 @@ if (monthNow===11){
 
         <Accordion className="AccordionHolder" data-aos="fade-up" data-aos-delay="1000">
           <Accordion.Item className="AccordionItem"  eventKey="0">
-            <Accordion.Header >How can i help you ?</Accordion.Header>
-            <Accordion.Body>
+            <Accordion.Header className="AccHeader">How can i help you ?</Accordion.Header>
+            <Accordion.Body className="AccBody">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
               minim veniam
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item className="AccordionItem" eventKey="1">
-            <Accordion.Header>how you can contact me ?</Accordion.Header>
+            <Accordion.Header className="AccHeader">how you can contact me ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -432,7 +441,7 @@ if (monthNow===11){
           </Accordion.Item>
 
           <Accordion.Item className="AccordionItem" eventKey="3">
-            <Accordion.Header >how can i choose the template ?</Accordion.Header>
+            <Accordion.Header className="AccHeader" >how can i choose the template ?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -552,7 +561,7 @@ if (monthNow===11){
       <div className="footer text-center "  >
         <p>copy © {new Date().getFullYear()} <span className="text">Tasneem Youssef</span>. All rights reserved.</p>
       </div>
-   </>
+   </div>
   );
 };
 export default Home;

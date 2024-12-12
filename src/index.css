@@ -3,11 +3,28 @@
   text-transform: capitalize !important;
   margin: 0;
 }
+:root{
+  --background-color:white;
+  --foreground-colo:#f8f9fa;
+  --primary-text-color:black;
+--clinet-bg:#b6acad;
+}
+[data-theme="dark"]{
+  --background-color:black;
+  --foreground-color:#1b1b1bbb;
+  --primary-text-color:white;
+--clinet-bg:#3d3d3d;
+
+}
 
 body {
   height: fit-content;
-  scroll-behavior: auto !important;
+  scroll-behavior: auto ;
   scroll-padding-top:20vh ;
+}
+.App{
+  background-color: var(--background-color);
+  transition: 0.7s;
 }
 
 a {
@@ -46,7 +63,7 @@ a {
 
 #header {
   width: 100%;
-  height: 6vh;
+  height: 60px;
   transition: 0.2s;
 }
 
@@ -99,7 +116,13 @@ margin-top: 2vh;
   margin: auto;
   margin-top: 5%;
 }
-
+.number,.Bio,.detailsRow,.AboutMeHeading,.ResumeColumns,.BioHeading,.portfolio h3,.speakTitle{
+  color: var(--primary-text-color);
+  
+}
+.Resume{
+  background-color: var(--foreground-color);
+}
 
 
 h3 {
@@ -147,6 +170,7 @@ h3 {
 
 .bardetails h5 {
   font-size: 1rem !important;
+  color: var(--primary-text-color);
 
 }
 
@@ -257,8 +281,24 @@ h3 {
   padding: 5px;
   border-radius: 5px;
 }
+.AccHeader{
+  transition: 0.7s;
+
+}
+.AccHeader button{
+  
+  background-color: var(--background-color) !important;
+  color: var(--primary-text-color) !important;
+  transition: 0.7s;
+
+}
 .AccordionItem{
   width: 35vw;
+  border: none !important;
+  background-color: var(--background-color) !important;
+  color: var(--primary-text-color) !important;
+  transition: 0.7s;
+
 }
 .AccordionHolder {
   width: 50%;
@@ -267,6 +307,8 @@ h3 {
   flex-grow: 2;
   flex-basis: 1;
   align-self: auto;
+  transition: 0.7s;
+
 }
 
 
@@ -301,6 +343,7 @@ h3 {
 .Resume {
   margin-top: 5%;
   padding-top: 5%;
+  background-color: var(--foreground-color);
 }
 
 .ResumeTitle,
@@ -331,13 +374,12 @@ h3 {
 
 .CarosuelItem {
   padding-top: 5vh ;
-  height: 55vh;
-  padding-bottom: 10vh;
-}
+height: 45vh;
+  }
 
 #clientSpeak {
-  height: 70vh;
-  background-color: #b6acad;
+  height: 60vh;
+  background-color: var(--clinet-bg);
   padding-top: 3vh;
 }
 
@@ -356,6 +398,9 @@ h3 {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+}
+.QuestionHeading h4{
+  color: var(--primary-text-color);
 }
 
 
@@ -598,6 +643,12 @@ h1 {
   transform: translateX(-50%);
   box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.3) !important;
 }
+.clientcomment{
+  font-size: 0.8em;
+  width: 75%;
+  margin: auto;
+  color: var(--primary-text-color);
+}
 
 .question-mark {
   flex-grow: 1;
@@ -655,6 +706,7 @@ margin-top: 2.5vh !important;
 
 label {
   font-size: 1rem;
+  color: black !important;
 }
 
 .nameInput,
@@ -726,19 +778,6 @@ textarea:focus {
   right: 20px !important;
 
 }
-
-#Name:hover{
-  animation-name: nameAnimate;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
-}
-
-@keyframes nameAnimate {
-  50%{
-    margin-top: -15px;
-  }
-}
 .typer span {
   font-size: 60px;
   color: white;
@@ -790,8 +829,13 @@ textarea:focus {
 .Accordion {
   min-width: 150px !important;
 }
+.AccHeader,.AccBody{
+  
+  background-color: var(--background-color) !important;
+  color: var(--primary-text-color) !important;
+}
 .themeToggle{
-  background-color: white;
+  background-color: #01757a;
   width: 50px;
   height: 50px;
   position: fixed;
@@ -803,4 +847,17 @@ border-right: 0;
 border-bottom: #01757a solid 1px;
 border-left: #01757a 1px solid;
 border-radius: 5px 0  0 5px;
+}
+label{
+  color: var(--primary-text-color);
+}
+
+#check{
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 40px;
+  margin-top: -10px;
+  margin-left: 5px;
+
 }

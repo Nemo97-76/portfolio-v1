@@ -504,7 +504,6 @@ h1 {
   width: 80%;
   color: white;
 }
-
 .img div span {
   font-weight: 700;
   color: rgb(188, 188, 188);
@@ -523,7 +522,9 @@ h1 {
   font-size: 30px;
   color: black;
 }
-
+.drawerlist{
+  background-color: var(--background-color);
+}
 #Form .sendBTN {
   font-size: 20px !important;
   color: black !important;
@@ -545,7 +546,6 @@ h1 {
   right: 15px !important;
   border: none !important;
 }
-
 
 .img::before {
   position: absolute;
@@ -851,6 +851,7 @@ border-bottom: #01757a solid 1px;
 border-left: #01757a 1px solid;
 border-radius: 5px 0  0 5px;
 }
+
 label{
   color: var(--primary-text-color);
 }

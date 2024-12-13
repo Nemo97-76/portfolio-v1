@@ -493,9 +493,9 @@ handleChange={()=>setIsDark(!isDark)}
 
             <Sheet className="sheet" data-aos="fade-up" data-aos-delay="650">
               <Tooltip title="LinkedIn" arrow placement="bottom">
-                <div >
+                <a href="https://www.linkedin.com/in/tasneem-youssef-770708278/">
                   <SiLinkedin id="ICON"  />
-                </div>
+                </a>
               </Tooltip>
             </Sheet>
 

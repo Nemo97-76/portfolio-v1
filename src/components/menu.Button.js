@@ -20,7 +20,7 @@ export default function MenuButton() {
       <IconButton className='iconBTN me-5' onClick={() => setOpen(true)}>
         <Menu className='menu' />
       </IconButton>
-      <Drawer size="sm" open={open} onClose={() => setOpen(false)}>
+      <Drawer  size="sm" open={open} onClose={() => setOpen(false)}>
         <Box
           sx={{
             display: 'flex',
@@ -34,6 +34,7 @@ export default function MenuButton() {
           <ModalClose id="close-icon" sx={{ position: 'initial' }} />
         </Box>
         <List
+        className='drawerlist'
           size="sm"
           component="nav"
           sx={{
@@ -43,26 +44,26 @@ export default function MenuButton() {
           }}
         >
           <Nav.Link href='#home'>
-            <ListItemButton onClick={() => setOpen(false)}>Home</ListItemButton>
+            <ListItemButton  className="menuBTN" onClick={() => setOpen(false)}>Home</ListItemButton>
           </Nav.Link>
           <Nav.Link href="#AboutMe">
-            <ListItemButton onClick={() => setOpen(false)}>About Me</ListItemButton>
+            <ListItemButton  className="menuBTN" onClick={() => setOpen(false)}>About Me</ListItemButton>
           </Nav.Link>
 
           <Nav.Link href="#Resume">
-            <ListItemButton onClick={() => setOpen(false)}>Resume</ListItemButton>
+            <ListItemButton  className="menuBTN" onClick={() => setOpen(false)}>Resume</ListItemButton>
           </Nav.Link>
 
           <Nav.Link href="#portfolio">
-            <ListItemButton onClick={() => setOpen(false)}>portfolio</ListItemButton>
+            <ListItemButton  className="menuBTN" onClick={() => setOpen(false)}>portfolio</ListItemButton>
           </Nav.Link>
 
           <Nav.Link href="#clientSpeak">
-            <ListItemButton onClick={() => setOpen(false)}>Client speak</ListItemButton>
+            <ListItemButton  className="menuBTN" onClick={() => setOpen(false)}>Client speak</ListItemButton>
           </Nav.Link>
 
           <Nav.Link href="#contactMe">
-            <ListItemButton onClick={() => setOpen(false)}>Contact Me</ListItemButton>
+            <ListItemButton  className="menuBTN" onClick={() => setOpen(false)}>Contact Me</ListItemButton>
           </Nav.Link>
           <div className="icons">
 
@@ -84,9 +85,9 @@ export default function MenuButton() {
 
             <Sheet className="sheet">
               <Tooltip title="LinkedIn" arrow placement="bottom">
-                <div>
+                <a href='https://www.linkedin.com/in/tasneem-youssef-770708278/'>
                   <SiLinkedin id="ICON" />
-                </div>
+                </a>
               </Tooltip>
             </Sheet>
 

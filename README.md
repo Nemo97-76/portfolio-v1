@@ -1,6 +1,6 @@
-# Portfolio V1
+# Portfolio
 
-A sleek and responsive personal portfolio website showcasing my projects, skills, and experience as a junior React.js developer. This project serves as a digital resume, highlighting my work in web development and providing a way for potential employers or collaborators to connect with me.
+a simple portfolio that conatins my details, skills and some projects 
 
 ## Features
 - **About Section**: Introduces my background, skills, and passion for web development.

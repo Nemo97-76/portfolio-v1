@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
-import All from "./All.js";
-import Portfolio from "./portfolio.js";
-import Ecommerce from "./ecommerce.js";
+import All from "./All.jsx";
+import Portfolio from "./portfolio.jsx";
+import Ecommerce from "./ecommerce.jsx";
 const TabContext = createContext({ activeTab: 0 })
 const ComponentA = () => {
   return (

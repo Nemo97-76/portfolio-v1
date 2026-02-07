@@ -3,26 +3,25 @@
   text-transform: capitalize !important;
   margin: 0;
 }
-:root{
-  --background-color:white;
-  --foreground-colo:#f8f9fa;
-  --primary-text-color:black;
---clinet-bg:#b6acad;
+:root {
+  --background-color: white;
+  --foreground-colo: #f8f9fa;
+  --primary-text-color: black;
+  --clinet-bg: #b6acad;
 }
-[data-theme="dark"]{
-  --background-color:black;
-  --foreground-color:#1b1b1bbb;
-  --primary-text-color:white;
---clinet-bg:#3d3d3d;
-
+[data-theme="dark"] {
+  --background-color: black;
+  --foreground-color: #1b1b1bbb;
+  --primary-text-color: white;
+  --clinet-bg: #3d3d3d;
 }
 
 body {
   height: fit-content;
-  scroll-behavior: auto ;
-  scroll-padding-top:20vh ;
+  scroll-behavior: auto;
+  scroll-padding-top: 20vh;
 }
-.App{
+.App {
   background-color: var(--background-color);
   transition: 0.7s;
 }
@@ -40,12 +39,12 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.NavToResume{
+.NavToResume {
   height: 15vh;
   position: absolute;
   top: 80%;
   left: 50%;
-  transform:translate(-50%,-50%)
+  transform: translate(-50%, -50%);
 }
 
 .welcomeMessage {
@@ -73,14 +72,15 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 0 0 12px 12px;
   position: relative;
   background-attachment: fixed;
-  background-image: url('/src/work-from-home-work-living-room_988095-479.avif');
+  background-image: url("/src/work-from-home-work-living-room_988095-479.avif");
 }
 
 .home::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -89,7 +89,7 @@ a {
 .Arrow {
   margin-left: 50%;
   transform: translateX(-50%);
-margin-top: 2vh;
+  margin-top: 2vh;
   font-size: 40px !important;
   color: white;
   animation-name: arrowMovment;
@@ -116,14 +116,19 @@ margin-top: 2vh;
   margin: auto;
   margin-top: 5%;
 }
-.number,.Bio,.detailsRow,.AboutMeHeading,.ResumeColumns,.BioHeading,.portfolio h3,.speakTitle{
+.number,
+.Bio,
+.detailsRow,
+.AboutMeHeading,
+.ResumeColumns,
+.BioHeading,
+.portfolio h3,
+.speakTitle {
   color: var(--primary-text-color);
-  
 }
-.Resume{
+.Resume {
   background-color: var(--foreground-color);
 }
-
 
 h3 {
   text-align: center;
@@ -152,7 +157,6 @@ h3 {
   flex-basis: 1;
 }
 
-
 .bars {
   width: 80% !important;
   justify-content: space-around !important;
@@ -171,7 +175,6 @@ h3 {
 .bardetails h5 {
   font-size: 1rem !important;
   color: var(--primary-text-color);
-
 }
 
 .linear {
@@ -263,12 +266,12 @@ h3 {
 
 .Questions {
   display: flex;
-  width:60vw;
+  width: 60vw;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   align-content: center;
-  height:300px;
+  height: 300px;
   margin: auto;
   gap: 5px;
 }
@@ -281,24 +284,20 @@ h3 {
   padding: 5px;
   border-radius: 5px;
 }
-.AccHeader{
+.AccHeader {
   transition: 0.7s;
-
 }
-.AccHeader button{
-  
+.AccHeader button {
   background-color: var(--background-color) !important;
   color: var(--primary-text-color) !important;
   transition: 0.7s;
-
 }
-.AccordionItem{
+.AccordionItem {
   width: 35vw;
   border: none !important;
   background-color: var(--background-color) !important;
   color: var(--primary-text-color) !important;
   transition: 0.7s;
-
 }
 .AccordionHolder {
   width: 50%;
@@ -308,9 +307,7 @@ h3 {
   flex-basis: 1;
   align-self: auto;
   transition: 0.7s;
-
 }
-
 
 #btn-back-to-top {
   position: fixed;
@@ -326,13 +323,13 @@ h3 {
   font-weight: 400;
   color: grey;
 }
-.item1,.item2,.item3,.item4{
+.item1,
+.item2,
+.item3,
+.item4 {
   display: flex;
   flex-direction: column;
 }
-
-
-
 
 .Data div p {
   font-size: 15px;
@@ -343,6 +340,7 @@ h3 {
 .Resume {
   margin-top: 5%;
   padding-top: 5%;
+  border-radius: 0 0 12px 12px;
   background-color: var(--foreground-color);
 }
 
@@ -373,18 +371,16 @@ h3 {
 }
 
 .CarosuelItem {
-  padding-top: 5vh ;
-height: 450px;
-  }
+  padding-top: 5vh;
+  height: 450px;
+}
 
 #clientSpeak {
   height: 600px;
   background-color: var(--clinet-bg);
   padding-top: 3vh;
+  border-radius: 0 0 12px 12px;
 }
-
-
-
 
 .CarosuelItem p {
   text-align: center;
@@ -395,17 +391,16 @@ height: 450px;
   font-size: 0.6rem !important;
   color: whitesmoke !important;
 }
-.QuestionHeading{
+.QuestionHeading {
   width: 80%;
   margin: auto;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
-.QuestionHeading h4{
+.QuestionHeading h4 {
   color: var(--primary-text-color);
 }
-
 
 .reveal {
   position: relative;
@@ -419,9 +414,15 @@ height: 450px;
   opacity: 1;
 }
 
-
 .FadBox:hover {
-  background-image: linear-gradient(to left bottom, #ff9f66, #f9955a, #f28b4d, #ec8141, #e57734) !important;
+  background-image: linear-gradient(
+    to left bottom,
+    #ff9f66,
+    #f9955a,
+    #f28b4d,
+    #ec8141,
+    #e57734
+  ) !important;
 }
 
 #download-pdf-button {
@@ -438,7 +439,7 @@ height: 450px;
 }
 
 .ArrowUp {
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
   position: relative;
   color: var(--background-color);
   top: 50%;
@@ -483,7 +484,6 @@ h1 {
   font-size: 20px !important;
 }
 
-
 .img {
   position: relative;
   width: 285px !important;
@@ -522,7 +522,7 @@ h1 {
   font-size: 30px;
   color: black;
 }
-.drawerlist{
+.drawerlist {
   background-color: var(--background-color);
 }
 #Form .sendBTN {
@@ -551,24 +551,24 @@ h1 {
   position: absolute;
   content: "";
   top: 0;
-  border-radius: 20px;
+  border-radius: 12px;
   left: 50%;
   transform: translateX(-50%);
   width: 92%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(1, 117, 122, 0.7);
+  backdrop-filter: blur(5px) saturate(100%);
   visibility: hidden;
 }
 .img img {
   object-fit: cover;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 12px;
 }
 
 .img:hover.img::before {
   visibility: visible;
 }
-
 
 .Hire {
   margin-top: 15vh;
@@ -578,7 +578,8 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url('./iewek-gnos-hhUx08PuYpc-unsplash-1024x768.jpg');
+  border-radius: 0 0 12px 12px;
+  background-image: url("./iewek-gnos-hhUx08PuYpc-unsplash-1024x768.jpg");
 }
 
 .Hire:before {
@@ -598,7 +599,6 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-
 .HireMe {
   transition: All 0.3s;
   font-size: 2rem !important;
@@ -606,7 +606,6 @@ h1 {
   color: black !important;
   display: block !important;
   margin: auto !important;
-
 }
 
 .HireMe:hover {
@@ -618,7 +617,6 @@ h1 {
   border: none;
   background-color: transparent;
   color: grey;
-
 }
 
 .NaV button:focus {
@@ -646,7 +644,7 @@ h1 {
   transform: translateX(-50%);
   box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.3) !important;
 }
-.clientcomment{
+.clientcomment {
   font-size: 0.7em;
   width: 75%;
   margin: auto;
@@ -700,7 +698,7 @@ h1 {
 }
 
 .icons {
-margin-top: 2.5vh !important;
+  margin-top: 2.5vh !important;
   display: flex;
   justify-content: space-evenly !important;
   width: 100%;
@@ -779,7 +777,6 @@ textarea:focus {
   font-family: sans-serif !important;
   position: absolute !important;
   right: 20px !important;
-
 }
 .typer span {
   font-size: 60px;
@@ -798,8 +795,6 @@ textarea:focus {
   left: 7%;
 }
 
-
-
 .text {
   font-weight: 700;
   color: #f6c0a6;
@@ -809,57 +804,56 @@ textarea:focus {
 #projects {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5vh;
+  row-gap: 15px;
   width: 65%;
   height: fit-content;
   margin: auto;
 }
 
-.RowOne {
+.row {
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 15px ; 
 }
 
 .FadBox {
   background-color: #f6c0a6 !important;
   cursor: pointer !important;
   text-align: center !important;
-  width: 2rem !important;
-  height: 2rem !important;
+  width: 50px !important;
+  height: 50px !important;
   border-radius: 50% !important;
 }
 
 .Accordion {
   min-width: 150px !important;
 }
-.AccHeader,.AccBody{
-  
+.AccHeader,
+.AccBody {
   background-color: var(--background-color) !important;
   color: var(--primary-text-color) !important;
 }
-.themeToggle{
-  background-color:  rgba(1, 117, 122, 0.69);
+.themeToggle {
   width: 50px;
   height: 50px;
   position: fixed;
   z-index: 10;
   right: 0;
-  top:50%;
- backdrop-filter: blur(7px) saturate(100%);
-border-radius: 12px 0  0 12px;
+  top: 50%;
+  background-color: rgba(1, 117, 122, 0.69);
+  backdrop-filter: blur(15px) saturate(100%);
+  border-radius: 12px 0 0 12px;
 }
 
-label{
+label {
   color: var(--primary-text-color);
 }
 
-#check{
+#check {
   border: none;
   background-color: transparent;
   color: whitesmoke;
   font-size: 40px;
   margin-top: -10px;
   margin-left: 5px;
-
 }

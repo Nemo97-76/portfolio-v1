@@ -1,7 +1,7 @@
 import React, {useEffect,useState} from "react";
-import Typer from "./typer.js";
+import Typer from "./typer.jsx";
 import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
-import BackToTop from "./BackToTop.js";
+import BackToTop from "./BackToTop.jsx";
 import resume from "../tasneem youssef Resume.pdf"
 import Stack from '@mui/joy/Stack';
 import { Box,  LinearProgress } from '@mui/joy';
@@ -17,9 +17,9 @@ import Button from "@mui/joy/Button";
 import { keyframes } from "@mui/system";
 import { Snackbar } from '@mui/joy'
 import { IoMdClose } from "react-icons/io";
-import DownloadButton from "./downloadButton.js";
-import Navigator from './navigator.js'
-import Speak from './Speak.js';
+import DownloadButton from "./downloadButton.jsx";
+import Navigator from './navigator.jsx'
+import Speak from './Speak.jsx';
 import questionMark from "./images/questionMark.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';

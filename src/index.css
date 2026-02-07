@@ -1,0 +1,865 @@
+* {
+  padding: 0;
+  text-transform: capitalize !important;
+  margin: 0;
+}
+:root{
+  --background-color:white;
+  --foreground-colo:#f8f9fa;
+  --primary-text-color:black;
+--clinet-bg:#b6acad;
+}
+[data-theme="dark"]{
+  --background-color:black;
+  --foreground-color:#1b1b1bbb;
+  --primary-text-color:white;
+--clinet-bg:#3d3d3d;
+
+}
+
+body {
+  height: fit-content;
+  scroll-behavior: auto ;
+  scroll-padding-top:20vh ;
+}
+.App{
+  background-color: var(--background-color);
+  transition: 0.7s;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.InteroHeading {
+  text-align: center;
+  width: 80%;
+  height: 15vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.NavToResume{
+  height: 15vh;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform:translate(-50%,-50%)
+}
+
+.welcomeMessage {
+  margin-top: -25px;
+  font-size: 20px;
+  color: #e57734;
+  font-weight: 400;
+}
+
+.ResumeButton {
+  font-size: 1rem !important;
+  background-color: #b6acad !important;
+  color: black !important;
+}
+
+#header {
+  width: 100%;
+  height: 60px;
+  transition: 0.2s;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  background-image: url('/src/work-from-home-work-living-room_988095-479.avif');
+}
+
+.home::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.Arrow {
+  margin-left: 50%;
+  transform: translateX(-50%);
+margin-top: 2vh;
+  font-size: 40px !important;
+  color: white;
+  animation-name: arrowMovment;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+.Arrow:hover {
+  animation-play-state: paused;
+}
+
+@keyframes arrowMovment {
+  50% {
+    margin-top: 5vh;
+  }
+}
+
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+.number,.Bio,.detailsRow,.AboutMeHeading,.ResumeColumns,.BioHeading,.portfolio h3,.speakTitle{
+  color: var(--primary-text-color);
+  
+}
+.Resume{
+  background-color: var(--foreground-color);
+}
+
+
+h3 {
+  text-align: center;
+}
+
+.detailsRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+}
+
+.content {
+  flex-grow: 1;
+  flex-basis: 1;
+  align-self: auto;
+}
+
+.anime {
+  flex-grow: 1;
+  flex-basis: 1;
+}
+
+
+.bars {
+  width: 80% !important;
+  justify-content: space-around !important;
+}
+
+.Hire h2 {
+  text-align: center;
+  color: white;
+}
+
+.bardetails {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.bardetails h5 {
+  font-size: 1rem !important;
+  color: var(--primary-text-color);
+
+}
+
+.linear {
+  height: 8px !important;
+  color: #e57734 !important;
+}
+
+.progressBarleft,
+.progressBarRight {
+  width: 45% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  row-gap: 20px !important;
+}
+
+.BioHeading {
+  font-size: 23px;
+}
+
+.BioHeading b {
+  border-bottom: 3px solid #e57734;
+}
+
+.Bio {
+  font-size: 18px;
+}
+
+.ResumeColumns {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.columnOne {
+  padding-bottom: 5%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.columnTwo {
+  padding-bottom: 5%;
+  width: 45%;
+}
+
+.eductiondetails {
+  font-size: 1rem;
+  color: grey;
+}
+
+.detailsBox {
+  border-left: 3px solid #e57734;
+  margin-left: 5%;
+  padding-left: 2%;
+}
+
+.anime {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  background-color: #e57734;
+  position: relative;
+  width: 9.38rem;
+  height: 9.38rem;
+  border-radius: 50%;
+}
+
+.number {
+  cursor: default;
+  text-align: center;
+  font-size: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animate__animated {
+  font-size: 25px;
+}
+
+.Questions {
+  display: flex;
+  width:60vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  height:300px;
+  margin: auto;
+  gap: 5px;
+}
+
+.FAQ {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  background-color: #f6c0a6;
+  padding: 5px;
+  border-radius: 5px;
+}
+.AccHeader{
+  transition: 0.7s;
+
+}
+.AccHeader button{
+  
+  background-color: var(--background-color) !important;
+  color: var(--primary-text-color) !important;
+  transition: 0.7s;
+
+}
+.AccordionItem{
+  width: 35vw;
+  border: none !important;
+  background-color: var(--background-color) !important;
+  color: var(--primary-text-color) !important;
+  transition: 0.7s;
+
+}
+.AccordionHolder {
+  width: 50%;
+  top: 70px;
+  height: 250px;
+  flex-grow: 2;
+  flex-basis: 1;
+  align-self: auto;
+  transition: 0.7s;
+
+}
+
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+.Data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: 400;
+  color: grey;
+}
+.item1,.item2,.item3,.item4{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.Data div p {
+  font-size: 15px;
+  font-weight: 700;
+  color: grey;
+}
+
+.Resume {
+  margin-top: 5%;
+  padding-top: 5%;
+  background-color: var(--foreground-color);
+}
+
+.ResumeTitle,
+#portfolio,
+.AboutMeTitle {
+  width: fit-content;
+  text-align: center;
+  background-color: #f6c0a6;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.speakContainer {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  cursor: default;
+}
+
+.carousel {
+  height: fit-content;
+}
+
+.CarosuelItem {
+  padding-top: 5vh ;
+height: 450px;
+  }
+
+#clientSpeak {
+  height: 600px;
+  background-color: var(--clinet-bg);
+  padding-top: 3vh;
+}
+
+
+
+
+.CarosuelItem p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.clientDetails {
+  font-size: 0.6rem !important;
+  color: whitesmoke !important;
+}
+.QuestionHeading{
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.QuestionHeading h4{
+  color: var(--primary-text-color);
+}
+
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.FadBox:hover {
+  background-image: linear-gradient(to left bottom, #ff9f66, #f9955a, #f28b4d, #ec8141, #e57734) !important;
+}
+
+#download-pdf-button {
+  transition: all 0.3s !important;
+  font-size: 20px !important;
+  color: var(--primary-text-color) !important;
+  background-color: transparent !important;
+  border: 2px solid #01757a !important;
+}
+
+#download-pdf-button:hover {
+  color: var(--background-color) !important;
+  background-color: #01757a !important;
+}
+
+.ArrowUp {
+  font-size: 1.5rem !important;
+  position: relative;
+  color: var(--background-color);
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.FadBox:hover .ArrowUp {
+  color: var(--primary-text-color);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+b,
+p,
+h1 {
+  cursor: default;
+  text-transform: capitalize;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.btnHolder {
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #01757a !important;
+  color: white !important;
+}
+
+.navBTN:focus {
+  color: black !important;
+  font-size: 20px !important;
+}
+
+
+.img {
+  position: relative;
+  width: 285px !important;
+  height: fit-content;
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  text-align: center;
+}
+
+.img div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  width: 80%;
+  color: white;
+}
+.img div span {
+  font-weight: 700;
+  color: rgb(188, 188, 188);
+}
+
+.img:hover.img div {
+  visibility: visible;
+}
+
+.icon {
+  font-size: 40px !important;
+  color: #f6c0a6 !important;
+}
+
+#ICON {
+  font-size: 30px;
+  color: black;
+}
+.drawerlist{
+  background-color: var(--background-color);
+}
+#Form .sendBTN {
+  font-size: 20px !important;
+  color: black !important;
+  background-color: #f6c0a6 !important;
+}
+
+.snackBar {
+  width: fit-content !important;
+  height: 50px !important;
+  padding: 43px !important;
+  background-color: #f6c0a6 !important;
+  color: black !important;
+}
+
+.modalBTN {
+  background-color: transparent !important;
+  position: fixed !important;
+  top: 5px !important;
+  right: 15px !important;
+  border: none !important;
+}
+
+.img::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  border-radius: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+}
+.img img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.img:hover.img::before {
+  visibility: visible;
+}
+
+
+.Hire {
+  margin-top: 15vh;
+  position: relative;
+  height: 45vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('./iewek-gnos-hhUx08PuYpc-unsplash-1024x768.jpg');
+}
+
+.Hire:before {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.Hire div {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.HireMe {
+  transition: All 0.3s;
+  font-size: 2rem !important;
+  border: 2px solid #f6c0a6 !important;
+  color: black !important;
+  display: block !important;
+  margin: auto !important;
+
+}
+
+.HireMe:hover {
+  background-color: #f6c0a6 !important;
+  color: black !important;
+}
+
+.NaV button {
+  border: none;
+  background-color: transparent;
+  color: grey;
+
+}
+
+.NaV button:focus {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  border-bottom: 2px solid #f6c0a6;
+}
+
+.NaV {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.myskills {
+  text-align: left !important;
+}
+
+.Avatar {
+  width: 60px !important;
+  height: 60px !important;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.3) !important;
+}
+.clientcomment{
+  font-size: 0.7em;
+  width: 75%;
+  margin: auto;
+  color: var(--primary-text-color);
+}
+
+.question-mark {
+  flex-grow: 1;
+  flex-basis: 1;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.qusetionImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.getInTouch {
+  height: fit-content;
+  background-color: #e57734;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 7vh;
+}
+
+.leftInfo,
+.rightform {
+  width: 45%;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: auto;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.sheet {
+  width: fit-content !important;
+  background-color: transparent !important;
+}
+
+.icon .column1 p {
+  font-size: 20px;
+}
+
+.icons {
+margin-top: 2.5vh !important;
+  display: flex;
+  justify-content: space-evenly !important;
+  width: 100%;
+  margin: auto;
+}
+
+label {
+  font-size: 1rem;
+  color: black !important;
+}
+
+.nameInput,
+textarea {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid rgb(64, 64, 64);
+  width: 100%;
+  font-size: 1rem !important;
+  line-height: 35px;
+}
+
+textarea {
+  height: 17vh;
+}
+
+.nameInput:focus,
+textarea:focus {
+  border-bottom: 2px solid black;
+}
+
+.footer {
+  height: 20vh;
+  background-color: #3e2922;
+  position: relative;
+}
+
+.footer p {
+  font-weight: 100;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iconBTN {
+  color: white !important;
+  background-color: transparent !important;
+  margin-top: -5px;
+  margin-left: 9%;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.menu {
+  position: relative;
+  top: -10px;
+  font-size: 35px !important;
+}
+
+.iconsRow {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+.menuIcon {
+  font-size: 1.5rem !important;
+  color: black !important;
+}
+
+#Name {
+  color: white !important;
+  font-size: 1.7rem !important;
+  font-family: sans-serif !important;
+  position: absolute !important;
+  right: 20px !important;
+
+}
+.typer span {
+  font-size: 60px;
+  color: white;
+}
+
+#MenuName {
+  display: flex;
+  width: fit-content;
+  color: #e57734;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 85vh;
+  left: 7%;
+}
+
+
+
+.text {
+  font-weight: 700;
+  color: #f6c0a6;
+  text-decoration: underline;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5vh;
+  width: 65%;
+  height: fit-content;
+  margin: auto;
+}
+
+.RowOne {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px ; 
+}
+
+.FadBox {
+  background-color: #f6c0a6 !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  border-radius: 50% !important;
+}
+
+.Accordion {
+  min-width: 150px !important;
+}
+.AccHeader,.AccBody{
+  
+  background-color: var(--background-color) !important;
+  color: var(--primary-text-color) !important;
+}
+.themeToggle{
+  background-color:  rgba(1, 117, 122, 0.69);
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top:50%;
+ backdrop-filter: blur(7px) saturate(100%);
+border-radius: 12px 0  0 12px;
+}
+
+label{
+  color: var(--primary-text-color);
+}
+
+#check{
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 40px;
+  margin-top: -10px;
+  margin-left: 5px;
+
+}

@@ -1,6 +1,5 @@
 * {
   padding: 0;
-  text-transform: capitalize !important;
   margin: 0;
 }
 :root {
@@ -779,7 +778,7 @@ textarea:focus {
   right: 20px !important;
 }
 .typer span {
-  font-size: 60px;
+  font-size: 4rem;
   color: white;
 }
 

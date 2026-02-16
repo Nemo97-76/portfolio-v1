@@ -4,8 +4,7 @@ import Form from "./images/login form.jpeg";
 import TaskManger from "./images/task manger.jpeg";
 import cal from "./images/age calculator.png";
 import ecommerce1 from "./images/linktree.png";
-import img1 from "./images/img1.jpeg";
-import img2 from "./images/img2.jpeg";
+import traveling from "./images/traveling.jpeg";
 import Tooltip from "@mui/joy/Tooltip";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -71,14 +70,23 @@ const All = () => {
               data-aos-duration="15000"
             >
               <img src={TaskManger} alt="port2" loading="lazy" />
-              <div>
-                <InsertLink className="icon" /> <br />
-                <span style={{ fontSize: "1rem" }}>task manager</span>
-              </div>
+              <a
+                href="https://github.com/Nemo97-76/task-manger-frontend"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Tooltip title="click for github repo">
+                  <div>
+                    <InsertLink className="icon" /> <br />
+                    <span style={{ fontSize: "1rem" }}>task manager</span>
+                  </div>
+                </Tooltip>
+              </a>
             </div>
             {/* /img3 */}
           </div>
           {/* /RowOne */}
+
           <div
             className="RowTwo row wrap"
             style={{ justifyContent: "space-around", marginTop: "5%" }}
@@ -89,12 +97,12 @@ const All = () => {
               data-aos-delay="400"
               data-aos-duration="15000"
             >
-              <img src={img1} alt="e2" loading="lazy" />
-              
-                  <div>
-                    <InsertLink className="icon" /> <br />
-                    <span style={{ fontSize: "1rem" }}>traveling </span>
-                  </div>
+              <img src={traveling} alt="e2" loading="lazy" />
+
+              <div>
+                <InsertLink className="icon" /> <br />
+                <span style={{ fontSize: "1rem" }}>traveling </span>
+              </div>
             </div>
             {/* /img4 */}
 
@@ -120,19 +128,7 @@ const All = () => {
             </div>
             {/* /img5 */}
 
-            <div
-              className=" img"
-              data-aos="fade-up"
-              data-aos-delay="600"
-              data-aos-duration="15000"
-            >
-              <img src={img2} alt="e3" loading="lazy" />
-                <div>
-                  <InsertLink className="icon" /> <br />
-                  <span style={{ fontSize: "1rem" }}>ecommerce</span>
-                </div>
-            </div>
-            {/* /img6 */}
+    
           </div>
           {/* /RowTwo */}
         </div>

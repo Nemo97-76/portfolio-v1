@@ -1,30 +1,33 @@
-import React, { useEffect, useState } from "react";
-import Typer from "./typer.jsx";
-import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
-import BackToTop from "./BackToTop.jsx";
-import resume from "../tasneem youssef Resume.pdf";
-import Stack from "@mui/joy/Stack";
-import { Box, LinearProgress } from "@mui/joy";
-import { Accordion } from "react-bootstrap";
-import Sheet from "@mui/joy/Sheet";
-import Tooltip from "@mui/joy/Tooltip";
-import Nav from "react-bootstrap/Nav";
-import { BsExclamationLg, BsFacebook } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
+//import React, { useEffect, useState } from "react";
+//import Typer from "./typer.jsx";
+/* import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
+ */
+/* import BackToTop from "./BackToTop.jsx";
+ */
+//import resume from "../tasneem youssef Resume.pdf";
+//import Stack from "@mui/joy/Stack";
+//mport { Box, LinearProgress } from "@mui/joy";
+//import { Accordion } from "react-bootstrap";
+/* import Sheet from "@mui/joy/Sheet";
+ */ //import Tooltip from "@mui/joy/Tooltip";
+//import Nav from "react-bootstrap/Nav";
+//import { BsExclamationLg, BsFacebook } from "react-icons/bs";
+/* import { BsInstagram } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
-import Button from "@mui/joy/Button";
-import { keyframes } from "@mui/system";
-import { Snackbar } from "@mui/joy";
-import { IoMdClose } from "react-icons/io";
-import DownloadButton from "./downloadButton.jsx";
-import Navigator from "./navigator.jsx";
-import Speak from "./Speak.jsx";
-import questionMark from "./images/questionMark.png";
-import AOS from "aos";
+ */
+/* import Button from "@mui/joy/Button";
+ */ //import { keyframes } from "@mui/system";
+//import { Snackbar } from "@mui/joy";
+//import { IoMdClose } from "react-icons/io";
+//import DownloadButton from "./downloadButton.jsx";
+//import Navigator from "./navigator.jsx";
+//import Speak from "./Speak.jsx";
+//import questionMark from "./images/questionMark.png";
+/* import AOS from "aos";
 import "aos/dist/aos.css";
-import Toggle from "./Toggle.jsx";
-import useLocalStorage from "use-local-storage";
+ */ //import Toggle from "./Toggle.jsx";
+//import useLocalStorage from "use-local-storage";
 
 const inAnimation = keyframes`
   0% {
@@ -53,7 +56,7 @@ const Home = () => {
     AOS.init();
   }, []);
 
-  const [open, setOpen] = useState(false);
+  /* const [open, setOpen] = useState(false);
   var monthNow = new Date().getMonth();
   var yearNow = new Date().getFullYear();
   var dayNow = new Date().getDate();
@@ -74,17 +77,18 @@ const Home = () => {
 
   const handleClose = () => {
     setOpen(false);
-  };
+  }; */
   // eslint-disable-next-line
-  const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const [isDark, setIsDark] = useLocalStorage("isDark", false);
+/*   const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+ */ // const [isDark, setIsDark] = useLocalStorage("isDark", false);
 
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
       <Box className="themeToggle">
         <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
       </Box>
-      <div className="home" id="home">
+
+      {/* <div className="home" id="home">
         <h2 className="InteroHeading">
           <span className="welcomeMessage">Hi, I'm a Junior &nbsp;</span>
           <br />
@@ -101,7 +105,7 @@ const Home = () => {
           </Nav.Link>
         </div>
         <BackToTop />
-      </div>
+      </div> */}
       <div className="AboutMe" id="AboutMe">
         <p
           className="mb-4 AboutMeTitle"
@@ -269,15 +273,18 @@ const Home = () => {
               <div>
                 <h5>javaScript</h5>
                 <span className="eductiondetails">
-                  i have a good experience in javaScript, using it i'm creating interactive websites instead of static ones.
+                  i have a good experience in javaScript, using it i'm creating
+                  interactive websites instead of static ones.
                 </span>
               </div>
               <hr />
               <div>
                 <h5>reactjs.</h5>
                 <span className="eductiondetails">
-                  here where javaScript and HTML/CSS compines together, using it i'm creating dynamic websites , the data (the backend) are rendered and whole website can be created.
-                  </span>
+                  here where javaScript and HTML/CSS compines together, using it
+                  i'm creating dynamic websites , the data (the backend) are
+                  rendered and whole website can be created.
+                </span>
               </div>
             </div>
           </div>

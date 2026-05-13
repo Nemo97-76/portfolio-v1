@@ -1,6 +1,7 @@
 import * as React from 'react';
 import MenuButton from './menu.Button.jsx';
 import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
 
 export default function Header() {
     window.addEventListener('scroll', () => {
@@ -21,9 +22,9 @@ export default function Header() {
         <>
             <div id='header' className='navbar fixed-top'>
                 <MenuButton />
-                <Link to={'/'} id='Name' className='navbar-brand'>
+                <Nav.Link href="#home" id='Name' className='navbar-brand'>
                     Tasneem Youssef
-                </Link>
+                </Nav.Link>
             </div>
         </>
     );

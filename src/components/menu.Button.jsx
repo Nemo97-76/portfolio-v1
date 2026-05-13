@@ -50,8 +50,8 @@ export default function MenuButton() {
             <ListItemButton  className="menuBTN" onClick={() => setOpen(false)}>About Me</ListItemButton>
           </Nav.Link>
 
-          <Nav.Link href="#Resume">
-            <ListItemButton  className="menuBTN" onClick={() => setOpen(false)}>Resume</ListItemButton>
+          <Nav.Link href="#services">
+            <ListItemButton  className="menuBTN" onClick={() => setOpen(false)}>Services</ListItemButton>
           </Nav.Link>
 
           <Nav.Link href="#portfolio">

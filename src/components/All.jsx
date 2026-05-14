@@ -1,13 +1,35 @@
 import React, { useEffect } from "react";
 import { InsertLink } from "@mui/icons-material";
-import Form from "./images/login form.jpeg";
-import TaskManger from "./images/task manger.jpeg";
-import cal from "./images/age calculator.png";
-import ecommerce1 from "./images/linktree.png";
-import traveling from "./images/traveling.jpeg";
 import Tooltip from "@mui/joy/Tooltip";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import voyagley from "./images/voyagley.jpeg";
+import crochetCounter from "./images/crochetCounter.jpeg";
+import TaskManger from "./images/taskManger.jpeg";
+import Linketree from "./images/LinkTree.jpeg";
+
+const PROJECTS = [
+  {
+    image: voyagley,
+    title: "travel site",
+    href: "https://travel-site.netlify.app/",
+  },
+  {
+    image: crochetCounter,
+    title: "crochet counter",
+    href: "https://crochet-count-helper.netlify.app/",
+  },
+  {
+    image: TaskManger,
+    title: "task manager",
+    href: "https://github.com/Nemo97-76/task-manger-frontend",
+  },
+  {
+    image: Linketree,
+    title: "link tree",
+    href: "https://nemolinktree.netlify.app/",
+  },
+];
 
 const All = () => {
   useEffect(() => {
@@ -19,119 +41,27 @@ const All = () => {
       <div className="mt-5">
         <div className="All">
           <div className="RowOne row ">
-            <div
-              className=" img"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="15000"
-            >
-              <img alt="port1" src={Form} loading="lazy" />
-              <a
-                href="https://loginsignup55.netlify.app/"
-                rel="noreferrer"
-                target="_blank"
+            {PROJECTS.map((project) => (
+              <div
+                className=" img"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="15000"
               >
-                <Tooltip title="click to preview">
-                  <div>
-                    <InsertLink className="icon" /> <br />
-                    <span style={{ fontSize: "1rem" }}>login/signup form</span>
-                  </div>
-                </Tooltip>
-              </a>
-            </div>
-            {/* /img1 */}
-
-            <div
-              className="img"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="15000"
-            >
-              <img src={ecommerce1} alt="e1" loading="lazy" />
-              <a
-                href="https://nemolinktree.netlify.app/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <Tooltip title="click to preview">
-                  <div>
-                    <InsertLink className="icon" /> <br />
-                    <span style={{ fontSize: "1rem" }}>LinkTree</span>
-                  </div>
-                </Tooltip>
-              </a>
-            </div>
-            {/* /img2 */}
-
-            <div
-              className=" img"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="15000"
-            >
-              <img src={TaskManger} alt="port2" loading="lazy" />
-              <a
-                href="https://github.com/Nemo97-76/task-manger-frontend"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <Tooltip title="click for github repo">
-                  <div>
-                    <InsertLink className="icon" /> <br />
-                    <span style={{ fontSize: "1rem" }}>task manager</span>
-                  </div>
-                </Tooltip>
-              </a>
-            </div>
-            {/* /img3 */}
-          </div>
-          {/* /RowOne */}
-
-          <div
-            className="RowTwo row wrap"
-            style={{ justifyContent: "space-around", marginTop: "5%" }}
-          >
-            <div
-              className=" img"
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="15000"
-            >
-              <img src={traveling} alt="e2" loading="lazy" />
-
-              <div>
-                <InsertLink className="icon" /> <br />
-                <span style={{ fontSize: "1rem" }}>traveling </span>
+                <img alt={project.title} src={project.image} />
+                <a href={project.href} rel="noreferrer" target="_blank">
+                  <Tooltip title="click to preview">
+                    <div>
+                      <InsertLink className="icon" /> <br />
+                      <span style={{ fontSize: "1rem" }}>{project.title}</span>
+                    </div>
+                  </Tooltip>
+                </a>
               </div>
-            </div>
-            {/* /img4 */}
-
-            <div
-              className=" img"
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-duration="15000"
-            >
-              <img src={cal} alt="port3" loading="lazy" />
-              <a
-                href="https://yourage24.netlify.app/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <Tooltip title="click to preview">
-                  <div>
-                    <InsertLink className="icon" /> <br />
-                    <span style={{ fontSize: "1rem" }}>age calculator</span>
-                  </div>
-                </Tooltip>
-              </a>
-            </div>
-            {/* /img5 */}
+            ))}
           </div>
-          {/* /RowTwo */}
         </div>
       </div>
-      {/* /projects */}
     </>
   );
 };

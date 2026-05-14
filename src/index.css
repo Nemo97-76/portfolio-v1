@@ -84,6 +84,11 @@ a {
   font-weight: bold !important;
   letter-spacing: 2px !important;
 }
+.subtitleLine{
+  width: 50px;
+  height: 3px;
+  background-color: #e57734;
+}
 
 .Arrow {
   margin-left: 50%;
@@ -97,7 +102,13 @@ a {
   animation-iteration-count: infinite;
   animation-duration: 3s;
 }
-
+.sectionTitle{
+  color: #e57734 !important;
+  font-weight: bold !important;
+}
+.sectionSubtitle{
+  color: var(--primary-text-color) !important;
+}
 .Arrow:hover {
   animation-play-state: paused;
 }
@@ -232,6 +243,10 @@ h3 {
   border-left: 3px solid #e57734;
   margin-left: 5%;
   padding-left: 2%;
+}
+.ecommerce,.All{
+  width: 80%;
+  margin: auto;
 }
 
 .anime {
@@ -622,7 +637,14 @@ h1 {
   margin: auto;
   margin-top: 5vh;
 }
-
+.NaV button {
+  color: rgb(100, 100, 100) ;
+}
+.active{
+  color: var(--primary-text-color) !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid #f6c0a6 !important;
+}
 .myskills {
   text-align: left !important;
 }

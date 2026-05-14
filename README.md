@@ -2,6 +2,12 @@
 
 A sleek and responsive personal portfolio website showcasing my projects, skills, and experience as a junior React.js developer. This project serves as a digital resume, highlighting my work in web development and providing a way for potential employers or collaborators to connect with me.
 
+<a href="https://portfolio-76.netlify.app/" traget="_blank">
+<p align="center">
+<img src="./src/components/images/poster.jpeg" alt="website poster" width="800"/>
+</p>
+</a>
+
 ## Features
 - **About Section**: Introduces my background, skills, and passion for web development.
 - **Projects Section**: Displays a curated list of my projects with descriptions, tech stacks, and links to live demos and GitHub repositories.

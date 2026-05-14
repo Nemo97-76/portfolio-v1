@@ -16,7 +16,7 @@ const All = () => {
 
   return (
     <>
-      <div id="projects" className="mt-5">
+      <div className="mt-5">
         <div className="All">
           <div className="RowOne row ">
             <div
@@ -42,7 +42,7 @@ const All = () => {
             {/* /img1 */}
 
             <div
-              className=" img"
+              className="img"
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="15000"
@@ -127,8 +127,6 @@ const All = () => {
               </a>
             </div>
             {/* /img5 */}
-
-    
           </div>
           {/* /RowTwo */}
         </div>

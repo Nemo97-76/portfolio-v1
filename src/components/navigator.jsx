@@ -29,9 +29,9 @@ const Tabs = () => {
   return (
     <>
       <nav className="NaV">
-        <button data-aos="fade-right" data-aos-delay="100" data-aos-duration="15000" onClick={() => { handleTabChange(0); }}>All</button>
-        <button data-aos="fade-right" data-aos-delay="200" data-aos-duration="15000" onClick={() => { handleTabChange(1); }}>ecommerce</button>
-        <button data-aos="fade-right" data-aos-delay="300" data-aos-duration="15000" onClick={() => { handleTabChange(2); }}>portfolio</button>
+        <button className={activeTab === 0 ? "active" : ""} data-aos="fade-right" data-aos-delay="100" data-aos-duration="15000" onClick={() => { handleTabChange(0); }}>All</button>
+        <button className={activeTab === 1 ? "active" : ""} data-aos="fade-right" data-aos-delay="200" data-aos-duration="15000" onClick={() => { handleTabChange(1); }}>ecommerce</button>
+        <button className={activeTab === 2 ? "active" : ""} data-aos="fade-right" data-aos-delay="300" data-aos-duration="15000" onClick={() => { handleTabChange(2); }}>portfolio</button>
       </nav>
       <div>
         {activeTab === 0 ? <ComponentA /> : null}

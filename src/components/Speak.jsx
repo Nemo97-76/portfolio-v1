@@ -16,11 +16,10 @@ const Speak = () => {
       <Typography
         className="sectionTitle"
         level="body-sm"
-        sx={{ color: "#e57734", fontWeight: "bold" }}
       >
         client speak
       </Typography>
-      <Typography level="h2" sx={{ color: "var(--primary-text-color)" }}>
+      <Typography className="sectionSubtitle" level="h2" >
         what some of my clients says
       </Typography>
       <Carousel

@@ -190,7 +190,6 @@ const HomePage = () => {
               <Typography
                 className="sectionTitle"
                 level="body-sm"
-                sx={{ color: "#e57734", fontWeight: "bold" }}
               >
                 ABOUT ME
               </Typography>
@@ -199,8 +198,8 @@ const HomePage = () => {
                 sx={{ mb: 2, color: "var(--primary-text-color)" }}
               >
                 Know Me More
-              </Typography>
               <div className="subtitleLine"></div>
+              </Typography>
               <Typography level="body-lg" sx={{ mb: 3, color: "gray" }}>
                 I'm a Junior developer with a passion for web design. I enjoy
                 developing simple, clean and slick websites that provide real
@@ -208,13 +207,13 @@ const HomePage = () => {
                 which meets client’s requirements is my aim.
               </Typography>
               <Stack spacing={1}>
-                <Typography sx={{ color: "var(--primary-text-color)" }}>
+                <Typography >
                   <b>Name:</b> Tasneem Youssef
                 </Typography>
-                <Typography sx={{ color: "var(--primary-text-color)" }}>
+                <Typography >
                   <b>Email:</b> tasneemyoussef61@gmail.com
                 </Typography>
-                <Typography sx={{ color: "var(--primary-text-color)" }}>
+                <Typography >
                   <b>From:</b> Alexandria, Egypt
                 </Typography>
               </Stack>
@@ -244,8 +243,8 @@ const HomePage = () => {
               >
                 <Box
                   sx={{
-                    width: 200,
-                    height: 200,
+                    width: 175,
+                    height: 175,
                     borderRadius: "50%",
                     bgcolor: "#e57734",
                     display: "flex",
@@ -253,7 +252,7 @@ const HomePage = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     color: "white",
-                    boxShadow: "xl",
+                    boxShadow:"xl",
                   }}
                 >
                   <Typography level="h1" sx={{ color: "white" }}>
@@ -275,11 +274,10 @@ const HomePage = () => {
             <Typography
               className="sectionTitle"
               level="body-sm"
-              sx={{ color: "#e57734", fontWeight: "bold" }}
             >
               SERVICES
             </Typography>
-            <Typography level="h2" sx={{ color: "var(--primary-text-color)" }}>
+            <Typography className="sectionSubtitle" level="h2" >
               What I Do
             </Typography>
             <div className="subtitleLine"></div>
@@ -344,11 +342,10 @@ const HomePage = () => {
             <Typography
               className="sectionTitle"
               level="body-sm"
-              sx={{ color: "#e57734", fontWeight: "bold" }}
             >
               PORTFOLIO
             </Typography>
-            <Typography level="h2" sx={{ color: "var(--primary-text-color)" }}>
+            <Typography className="sectionSubtitle" level="h2" >
               Featured Projects
             </Typography>
             <div className="subtitleLine"></div>
@@ -384,7 +381,7 @@ const HomePage = () => {
                 <Box>
                   <Typography
                     level="h4"
-                    sx={{ color: "var(--primary-text-color)" }}
+                    className="sectionSubtitle"
                   >
                     Living in:
                   </Typography>
@@ -395,7 +392,7 @@ const HomePage = () => {
                 <Box>
                   <Typography
                     level="h4"
-                    sx={{ color: "var(--primary-text-color)" }}
+                    className="sectionSubtitle"
                   >
                     Call:
                   </Typography>

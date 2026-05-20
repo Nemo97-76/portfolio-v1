@@ -72,7 +72,7 @@ a {
   align-items: center;
   position: relative;
   background-image: url("./work-from-home-work-living-room_988095-479.avif");
-  border-image:fill 0 linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+  border-image:fill 0 linear-gradient(rgba(0,0,0,0.7));
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

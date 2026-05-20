@@ -17,7 +17,7 @@ const DownloadButton = ({ fileurl, filename }) => {
         id="download-pdf-button"
         className="btn"
       >
-        download Resume
+        download CV
       </Button>
     </>
   )

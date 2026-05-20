@@ -23,7 +23,7 @@ import "aos/dist/aos.css";
 import Typer from "./typer.jsx";
 import Speak from "./Speak.jsx";
 import Navigator from "./navigator.jsx";
-import resume from "../tasneem youssef Resume.pdf";
+import resume from "../tasneem youssef CV.pdf";
 import useLocalStorage from "use-local-storage";
 import Toggle from "./Toggle.jsx";
 import { keyframes } from "@mui/system";
@@ -84,17 +84,6 @@ const HomePage = () => {
       <Sheet
         id="home"
         className="home"
-        /* sx={{
-          height: "100vh",
-          display: "flex",
-          alignItems: "center",
-          position: "relative",
-          background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/src/work-from-home-work-living-room_988095-479.avif")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-          color: "white",
-        }} */
       >
         <Container>
           <Stack spacing={2} alignItems="center" textAlign="center">
@@ -225,9 +214,9 @@ const HomePage = () => {
                 startDecorator={<DownloadIcon />}
                 component="a"
                 href={resume}
-                download="Tasneem_Youssef_Resume.pdf"
+                download="Tasneem_Youssef_CV.pdf"
               >
-                Download Resume
+                Download CV
               </Button>
             </Grid>
             <Grid xs={12} md={6} data-aos="fade-left">

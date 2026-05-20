@@ -16,7 +16,6 @@ const Ecommerce = () => {
         <div className="ecommerce">
           <div
             className="RowOne row wrap"
-            style={{ justifyContent: "space-around" }}
           >
             <div
               className="AB img"

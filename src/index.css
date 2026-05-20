@@ -244,9 +244,15 @@ h3 {
   margin-left: 5%;
   padding-left: 2%;
 }
-.ecommerce,.All{
-  width: 80%;
+
+.RowOne{
+ max-width:1152px;
+  width: 100%;
   margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
 }
 
 .anime {
@@ -822,11 +828,7 @@ textarea:focus {
   margin: auto;
 }
 
-.row {
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+
 
 .FadBox {
   background-color: #f6c0a6 !important;

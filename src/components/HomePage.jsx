@@ -83,7 +83,8 @@ const HomePage = () => {
       {/* Hero Section */}
       <Sheet
         id="home"
-        sx={{
+        className="home"
+        /* sx={{
           height: "100vh",
           display: "flex",
           alignItems: "center",
@@ -93,7 +94,7 @@ const HomePage = () => {
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
           color: "white",
-        }}
+        }} */
       >
         <Container>
           <Stack spacing={2} alignItems="center" textAlign="center">
@@ -187,10 +188,7 @@ const HomePage = () => {
         <Container>
           <Grid container spacing={4} alignItems="center">
             <Grid xs={12} md={6} data-aos="fade-right">
-              <Typography
-                className="sectionTitle"
-                level="body-sm"
-              >
+              <Typography className="sectionTitle" level="body-sm">
                 ABOUT ME
               </Typography>
               <Typography
@@ -198,7 +196,7 @@ const HomePage = () => {
                 sx={{ mb: 2, color: "var(--primary-text-color)" }}
               >
                 Know Me More
-              <div className="subtitleLine"></div>
+                <div className="subtitleLine"></div>
               </Typography>
               <Typography level="body-lg" sx={{ mb: 3, color: "gray" }}>
                 I'm a Junior developer with a passion for web design. I enjoy
@@ -207,13 +205,13 @@ const HomePage = () => {
                 which meets client’s requirements is my aim.
               </Typography>
               <Stack spacing={1}>
-                <Typography >
+                <Typography>
                   <b>Name:</b> Tasneem Youssef
                 </Typography>
-                <Typography >
+                <Typography>
                   <b>Email:</b> tasneemyoussef61@gmail.com
                 </Typography>
-                <Typography >
+                <Typography>
                   <b>From:</b> Alexandria, Egypt
                 </Typography>
               </Stack>
@@ -252,7 +250,7 @@ const HomePage = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     color: "white",
-                    boxShadow:"xl",
+                    boxShadow: "xl",
                   }}
                 >
                   <Typography level="h1" sx={{ color: "white" }}>
@@ -271,13 +269,10 @@ const HomePage = () => {
       <Sheet id="services" sx={{ py: 10, bgcolor: "var(--foreground-color)" }}>
         <Container>
           <Stack alignItems="center" sx={{ mb: 6 }} data-aos="fade-up">
-            <Typography
-              className="sectionTitle"
-              level="body-sm"
-            >
+            <Typography className="sectionTitle" level="body-sm">
               SERVICES
             </Typography>
-            <Typography className="sectionSubtitle" level="h2" >
+            <Typography className="sectionSubtitle" level="h2">
               What I Do
             </Typography>
             <div className="subtitleLine"></div>
@@ -339,13 +334,10 @@ const HomePage = () => {
       <Box id="portfolio" sx={{ py: 10 }}>
         <Container>
           <Stack alignItems="center" sx={{ mb: 6 }} data-aos="fade-up">
-            <Typography
-              className="sectionTitle"
-              level="body-sm"
-            >
+            <Typography className="sectionTitle" level="body-sm">
               PORTFOLIO
             </Typography>
-            <Typography className="sectionSubtitle" level="h2" >
+            <Typography className="sectionSubtitle" level="h2">
               Featured Projects
             </Typography>
             <div className="subtitleLine"></div>
@@ -379,10 +371,7 @@ const HomePage = () => {
               </Typography>
               <Stack spacing={2}>
                 <Box>
-                  <Typography
-                    level="h4"
-                    className="sectionSubtitle"
-                  >
+                  <Typography level="h4" className="sectionSubtitle">
                     Living in:
                   </Typography>
                   <Typography sx={{ color: "gray" }}>
@@ -390,10 +379,7 @@ const HomePage = () => {
                   </Typography>
                 </Box>
                 <Box>
-                  <Typography
-                    level="h4"
-                    className="sectionSubtitle"
-                  >
+                  <Typography level="h4" className="sectionSubtitle">
                     Call:
                   </Typography>
                   <Typography sx={{ color: "gray" }}>

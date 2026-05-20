@@ -41,11 +41,11 @@ const All = () => {
       <div className="mt-5">
         <div className="All">
           <div className="RowOne row ">
-            {PROJECTS.map((project) => (
+            {PROJECTS.map((project, index) => (
               <div
                 className=" img"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay={(index+1)*100}
                 data-aos-duration="15000"
               >
                 <img alt={project.title} src={project.image} />

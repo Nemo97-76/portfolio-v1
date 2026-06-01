@@ -5,10 +5,10 @@ import HomePage from './components/HomePage.jsx';
 import Footer from './components/Footer.jsx';
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio-v1">
       <Header />
       <Routes>
-        <Route exact path='/' element={<HomePage />} />
+        <Route exact path='/'element={<HomePage />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

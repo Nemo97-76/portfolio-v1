@@ -43,7 +43,7 @@ const All = () => {
           <div className="RowOne row ">
             {PROJECTS.map((project, index) => (
               <div
-                className=" img"
+                className="imgContainer"
                 data-aos="fade-up"
                 data-aos-delay={(index+1)*100}
                 data-aos-duration="15000"

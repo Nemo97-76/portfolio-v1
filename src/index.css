@@ -69,10 +69,12 @@ a {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   background-image: url("./work-from-home-work-living-room_988095-479.avif");
-  border-image:fill 0 linear-gradient(rgba(0,0,0,0.7));
+  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.7));
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -84,40 +86,44 @@ a {
   font-weight: bold !important;
   letter-spacing: 2px !important;
 }
-.subtitleLine{
+.subtitleLine {
   width: 50px;
   height: 3px;
   background-color: #e57734;
 }
 
-.Arrow {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  margin-top: 2vh;
+.ArrowDown {
   font-size: 40px !important;
   color: white;
-  animation-name: arrowMovment;
+}
+.ArrowDownContainer{
+  margin-top: 50px !important;
+  animation: arrowDown 1s infinite;
   animation-timing-function: ease-in-out;
   animation-fill-mode: backwards;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
+  animation-direction: alternate;
 }
-.sectionTitle{
+@keyframes arrowDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+
+.sectionTitle {
   color: #e57734 !important;
   font-weight: bold !important;
 }
-.sectionSubtitle{
+
+.sectionSubtitle {
   color: var(--primary-text-color) !important;
 }
-.Arrow:hover {
-  animation-play-state: paused;
-}
 
-@keyframes arrowMovment {
-  50% {
-    margin-top: 5vh;
-  }
-}
+
+
 
 .AboutMe {
   display: flex;
@@ -132,8 +138,7 @@ a {
 .AboutMeHeading,
 .ResumeColumns,
 .BioHeading,
-.portfolio h3,
-.speakTitle {
+.portfolio h3 {
   color: var(--primary-text-color);
 }
 .Resume {
@@ -142,6 +147,18 @@ a {
 
 h3 {
   text-align: center;
+}
+.Number {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background-color: #e57734;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .detailsRow {
@@ -245,8 +262,8 @@ h3 {
   padding-left: 2%;
 }
 
-.RowOne{
- max-width:1152px;
+.RowOne {
+  max-width: 1152px;
   width: 100%;
   margin: auto;
   display: flex;
@@ -364,43 +381,144 @@ h3 {
   background-color: var(--foreground-color);
 }
 
-
-
-.speakContainer {
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: auto;
-  cursor: default;
-}
-
-.carousel {
-  height: fit-content;
-}
-
-.CarosuelItem {
-  padding-top: 5vh;
-  height: 450px;
-}
-
-#clientSpeak {
-  height: 600px;
+.speakSection {
   background-color: var(--clinet-bg);
-  padding-top: 3vh;
+  padding: 3rem 1.5rem 4rem;
   border-radius: 0 0 12px 12px;
 }
 
-.CarosuelItem p {
+.speakHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  font-size: 1rem;
+  margin-bottom: 2.5rem;
 }
 
-.clientDetails {
-  font-size: 0.6rem !important;
-  color: whitesmoke !important;
+.speakHeader .subtitleLine {
+  margin-top: 10px;
+}
+
+.speakCarousel {
+  max-width: 720px;
+  margin: 0 auto;
+  outline: none;
+}
+
+.speakCarousel:focus-visible {
+  outline: 2px solid #e57734;
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+.speakViewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.speakTrack {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .speakTrack {
+    transition: none;
+  }
+}
+
+.speakSlide {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0.5rem 2rem;
+  min-height: 280px;
+  cursor: default;
+}
+
+.speakQuoteBlock {
+  margin: 0 auto 1.5rem;
+  max-width: 85%;
+  border: none;
+}
+
+.speakQuoteIcon {
+  width: 40px;
+  height: 40px;
+  color: #e57734;
+  margin-bottom: 0.5rem;
+}
+
+.speakQuote {
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  line-height: 1.6;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+
+.speakAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.75rem;
+}
+
+.speakAuthorBlock {
+  margin: 0;
+}
+
+.speakAuthor {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-text-color);
+  margin: 0 0 0.25rem;
+}
+
+.speakRole {
+  font-size: 0.75rem;
+  color: gray;
+  margin: 0;
+}
+
+.speakDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.speakDot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+[data-theme="dark"] .speakDot {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.speakDot:hover {
+  transform: scale(1.15);
+}
+
+.speakDot--active,
+.speakDot[aria-selected="true"] {
+  background-color: #e57734;
+  transform: scale(1.2);
+}
+
+.speakDot:focus-visible {
+  outline: 2px solid #e57734;
+  outline-offset: 2px;
 }
 .QuestionHeading {
   width: 80%;
@@ -495,38 +613,67 @@ h1 {
   font-size: 20px !important;
 }
 
-.img {
+.imgContainer {
   position: relative;
-  width: 285px !important;
-  height: fit-content;
+  width: 325px !important;
+  height: 220px !important;
   border-radius: 20px;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 300px;
   text-align: center;
+  transform: translateY(0);
+  transition: all 0.3s;
 }
-
-.img div {
+.imgContainer img {
   position: absolute;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+.imgContainer::before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  bottom: 0;
+  border-radius: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 0;
+  backdrop-filter: blur(4px) saturate(100%);
+  transition: all 1s;
+}
+.imgContainer:hover::before {
+  height: 100%;
+}
+.imgContainer:hover {
+  transform: translateY(-15px) !important;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+.imgContainer span {
+  font-size: 1rem;
+  color: black !important;
+  font-weight: 600;
+}
+.imgContainer div {
+  position: absolute;
+  z-index: 3;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  visibility: hidden;
   width: 80%;
   color: white;
+  visibility: hidden;
 }
-.img div span {
-  font-weight: 700;
-  color: rgb(188, 188, 188);
-}
-
-.img:hover.img div {
+.imgContainer:hover div {
   visibility: visible;
+  transition-delay: 0.3s;
 }
 
 .icon {
   font-size: 40px !important;
-  color: #f6c0a6 !important;
+  color: #e57734 !important;
 }
 
 #ICON {
@@ -556,29 +703,6 @@ h1 {
   top: 5px !important;
   right: 15px !important;
   border: none !important;
-}
-
-.img::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  border-radius: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 92%;
-  height: 100%;
-  background-color: rgba(1, 117, 122, 0.7);
-  backdrop-filter: blur(5px) saturate(100%);
-  visibility: hidden;
-}
-.img img {
-  object-fit: cover;
-  width: 100%;
-  border-radius: 12px;
-}
-
-.img:hover.img::before {
-  visibility: visible;
 }
 
 .Hire {
@@ -644,29 +768,15 @@ h1 {
   margin-top: 5vh;
 }
 .NaV button {
-  color: rgb(100, 100, 100) ;
+  color: rgb(100, 100, 100);
 }
-.active{
+.active {
   color: var(--primary-text-color) !important;
   font-weight: 700 !important;
   border-bottom: 2px solid #f6c0a6 !important;
 }
 .myskills {
   text-align: left !important;
-}
-
-.Avatar {
-  width: 60px !important;
-  height: 60px !important;
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.3) !important;
-}
-.clientcomment {
-  font-size: 0.7em;
-  width: 75%;
-  margin: auto;
-  color: var(--primary-text-color);
 }
 
 .question-mark {
@@ -676,6 +786,9 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.HideOverFlow{
+  overflow: hidden;
 }
 
 .qusetionImg {
@@ -749,18 +862,18 @@ textarea:focus {
 }
 
 .footer {
-  height: 20vh;
+  height: 10vh;
   background-color: #3e2922;
   position: relative;
 }
 
 .footer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   font-weight: 100;
   font-size: 15px;
   color: white;
-  position: absolute;
-  left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -827,8 +940,6 @@ textarea:focus {
   height: fit-content;
   margin: auto;
 }
-
-
 
 .FadBox {
   background-color: #f6c0a6 !important;

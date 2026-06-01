@@ -2,6 +2,7 @@ import React, { createContext, useState } from "react";
 import All from "./All.jsx";
 import Portfolio from "./portfolio.jsx";
 import Ecommerce from "./ecommerce.jsx";
+import useLocalStorage from "use-local-storage";
 const TabContext = createContext({ activeTab: 0 })
 const ComponentA = () => {
   return (
@@ -21,11 +22,14 @@ const ComponentC = () => {
   );
 };
 const Tabs = () => {
-
-  const [activeTab, setActiveTab] = useState(0)
+  var [activeTab, setActiveTab] = useState(() => {
+    const saved = localStorage.getItem("activeTab");
+    return saved ? parseInt(saved, 10) : 0;
+  });
   const handleTabChange = (index) => {
+    localStorage.setItem("activeTab", index);
     setActiveTab(index);
-  }
+  };
   return (
     <>
       <nav className="NaV">

@@ -8,11 +8,10 @@ import {
   Grid,
   Card,
   AspectRatio,
-  IconButton,
   Sheet,
   Divider,
 } from "@mui/joy";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowDownwardRoundedIcon from '@mui/icons-material/ArrowDownwardRounded';
 import DownloadIcon from "@mui/icons-material/Download";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -31,13 +30,9 @@ import "aos/dist/aos.css";
 import BackToTop from "./BackToTop.jsx";
 
 const HomePage = () => {
-  //TODO: update projects
-  //TODO: take a landing page image
-  //TODO: change speak title style to fit the rest of the page
   //TODO: fix some styles
-  //TODO: change typer array
   //TODO: divide the page into components
-  //TODO: AOS
+  //TODO: convert all inline styles to external css each component in its own file
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
   const inAnimation = keyframes`
   0% {
@@ -81,12 +76,10 @@ const HomePage = () => {
         <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
       </Box>
       {/* Hero Section */}
-      <Sheet
-        id="home"
-        className="home"
-      >
+      <Sheet id="home" className="home">
+
         <Container>
-          <Stack spacing={2} alignItems="center" textAlign="center">
+          <Stack spacing={3} alignItems="center" textAlign="center">
             <Typography className="homeTitle" level="h4" data-aos="fade-down">
               HI, I'M TASNEEM YOUSSEF
             </Typography>
@@ -147,35 +140,24 @@ const HomePage = () => {
               >
                 Hire Me
               </Button>
+
             </Stack>
+            <div className="ArrowDownContainer">
+              <ArrowDownwardRoundedIcon
+                className="ArrowDown"
+              />
+            </div>
           </Stack>
         </Container>
-        <Box
-          sx={{
-            position: "absolute",
-            bottom: 30,
-            left: "50%",
-            transform: "translateX(-50%)",
-            animation: "bounce 2s infinite",
-          }}
-        >
-          <IconButton
-            component="a"
-            href="#AboutMe"
-            variant="plain"
-            sx={{ color: "white" }}
-          >
-            <ArrowForwardIcon
-              sx={{ transform: "rotate(90deg)", fontSize: "2rem" }}
-            />
-          </IconButton>
-        </Box>
+
+
+
       </Sheet>
       <BackToTop />
       {/* About Section */}
       <Box id="AboutMe" sx={{ py: 10 }}>
         <Container>
-          <Grid container spacing={4} alignItems="center">
+          <Grid className="HideOverFlow" container spacing={4} alignItems="center">
             <Grid xs={12} md={6} data-aos="fade-right">
               <Typography className="sectionTitle" level="body-sm">
                 ABOUT ME
@@ -228,20 +210,7 @@ const HomePage = () => {
                   alignItems: "center",
                 }}
               >
-                <Box
-                  sx={{
-                    width: 175,
-                    height: 175,
-                    borderRadius: "50%",
-                    bgcolor: "#e57734",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    color: "white",
-                    boxShadow: "xl",
-                  }}
-                >
+                <Box className="Number">
                   <Typography level="h1" sx={{ color: "white" }}>
                     2
                   </Typography>
@@ -336,17 +305,13 @@ const HomePage = () => {
       </Box>
 
       {/* Testimonials */}
-      <Sheet sx={{ py: 10, bgcolor: "var(--foreground-color)" }}>
-        <Container>
-          <Speak />
-        </Container>
-      </Sheet>
+      <Speak />
 
       {/* Contact Section */}
-      <Box id="contact" sx={{ py: 10 }}>
+      <Box id="contact"  sx={{ py: 10 }}>
         <Container>
-          <Grid container spacing={4}>
-            <Grid id="contactMe" xs={12} md={5} data-aos="fade-right">
+          <Grid  className="HideOverFlow" container spacing={4}>
+            <Grid  id="contactMe" xs={12} md={5} data-aos="fade-right">
               <Typography
                 level="h2"
                 sx={{ mb: 2, color: "var(--primary-text-color)" }}
@@ -377,34 +342,34 @@ const HomePage = () => {
                 </Box>
               </Stack>
               <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
-                <IconButton
+                <div
                   variant="soft"
                   component="a"
                   href="https://github.com/Nemo97-76"
                 >
                   <GitHubIcon />
-                </IconButton>
-                <IconButton
+                </div>
+                <div
                   variant="soft"
                   component="a"
                   href="https://www.linkedin.com/in/tasneem-youssef-770708278/"
                 >
                   <LinkedInIcon />
-                </IconButton>
-                <IconButton
+                </div>
+                <div
                   variant="soft"
                   component="a"
                   href="https://www.facebook.com/tasn13eem/"
                 >
                   <FacebookIcon />
-                </IconButton>
-                <IconButton
+                </div>
+                <div
                   variant="soft"
                   component="a"
                   href="https://www.instagram.com/"
                 >
                   <InstagramIcon />
-                </IconButton>
+                </div>
               </Stack>
             </Grid>
             <Grid xs={12} md={7} data-aos="fade-left">

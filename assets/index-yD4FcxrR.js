@@ -65,4 +65,4 @@ Error generating stack: `+f.message+`
           .nameInput:focus {
             border-bottom: 2px solid #e57734 !important;
           }
-        `})]})},nP=()=>y.jsx("div",{className:"footer text-center ",children:y.jsxs("p",{children:["copy © ",new Date().getFullYear()," ",y.jsx("span",{className:"text",children:"Tasneem Youssef"}),". All rights reserved."]})});function rP(){return y.jsxs(F1,{children:[y.jsx(r5,{}),y.jsx(L1,{children:y.jsx(yv,{exact:!0,path:"/",element:y.jsx(tP,{})})}),y.jsx(nP,{})]})}const oP=n1.createRoot(document.getElementById("root"));oP.render(y.jsx(ht.StrictMode,{children:y.jsx(rP,{})}));
+        `})]})},nP=()=>y.jsx("div",{className:"footer text-center ",children:y.jsxs("p",{children:["copy © ",new Date().getFullYear()," ",y.jsx("span",{className:"text",children:"Tasneem Youssef"}),". All rights reserved."]})});function rP(){return y.jsxs(F1,{basename:"/portfolio-v1",children:[y.jsx(r5,{}),y.jsx(L1,{children:y.jsx(yv,{exact:!0,path:"/",element:y.jsx(tP,{})})}),y.jsx(nP,{})]})}const oP=n1.createRoot(document.getElementById("root"));oP.render(y.jsx(ht.StrictMode,{children:y.jsx(rP,{})}));

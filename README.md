@@ -94,7 +94,7 @@ To deploy the portfolio:
 
 ## Live Demo
 [View the portfolio here]  
-<a href="https://portfolio-76.netlify.app/" traget="_blank">Demo</a>
+<a href="https://tasneem-youssef.github.io/portfolio-v1/" traget="_blank">Demo</a>
 
 ## Contact
 - **Email**: tasneemyoussef61@gmail.com

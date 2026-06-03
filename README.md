@@ -98,4 +98,4 @@ To deploy the portfolio:
 
 ## Contact
 - **Email**: tasneemyoussef61@gmail.com
-- **LinkedIn**: (https://www.linkedin.com/in/Nemo97-76) 
+- **LinkedIn**: <a href="https://www.linkedin.com/in/tasneem-youssef-react" target="_blank">Link</a>

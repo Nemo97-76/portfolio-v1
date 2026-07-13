@@ -11,8 +11,8 @@ import Linketree from "./images/LinkTree.jpeg";
 const PROJECTS = [
   {
     image: voyagley,
-    title: "travel site",
-    href: "https://travel-site.netlify.app/",
+    title: "travel agency",
+    href: "https://tasneem-youssef.github.io/travel-agency-voyagley/",
   },
   {
     image: crochetCounter,
@@ -45,7 +45,7 @@ const All = () => {
               <div
                 className="imgContainer"
                 data-aos="fade-up"
-                data-aos-delay={(index+1)*100}
+                data-aos-delay={(index + 1) * 100}
                 data-aos-duration="15000"
               >
                 <img alt={project.title} src={project.image} />

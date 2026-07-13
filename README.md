@@ -2,7 +2,7 @@
 
 A sleek and responsive personal portfolio website showcasing my projects, skills, and experience as a junior React.js developer. This project serves as a digital resume, highlighting my work in web development and providing a way for potential employers or collaborators to connect with me.
 
-<a href="https://portfolio-76.netlify.app/" traget="_blank">
+<a href="https://tasneem-youssef.github.io/portfolio-v1/" traget="_blank">
 <p align="center">
 <img src="./src/components/images/poster.jpeg" alt="website poster" width="800"/>
 </p>
@@ -94,8 +94,8 @@ To deploy the portfolio:
 
 ## Live Demo
 [View the portfolio here]  
-<a href="https://portfolio-76.netlify.app/" traget="_blank">Demo</a>
+<a href="https://tasneem-youssef.github.io/portfolio-v1/" traget="_blank">Demo</a>
 
 ## Contact
 - **Email**: tasneemyoussef61@gmail.com
-- **LinkedIn**: (https://www.linkedin.com/in/Nemo97-76) 
+- **LinkedIn**: <a href="https://www.linkedin.com/in/tasneem-youssef-react" target="_blank">Link</a>
